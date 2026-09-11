@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>OpenClaw — Eryanto Agusriadi</title>
+    <meta
+      name="description"
+      content="Pencatat pengeluaran keluarga di dalam WhatsApp dan Telegram, dengan tiga penyedia AI dan fallback otomatis."
+    />
+    <meta property="og:title" content="OpenClaw — studi kasus" />
+    <meta property="og:image" content="og.png" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <link rel="alternate" hreflang="id" href="project-openclaw.html" />
+    <link rel="alternate" hreflang="en" href="en/project-openclaw.html" />
+    <link rel="alternate" hreflang="x-default" href="project-openclaw.html" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="fonts/SpaceGrotesk-Variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Lewati ke konten</a>
+
+    <header class="hdr">
+      <a class="wordmark" href="index.html">ERYANTO<span>.dev</span></a>
+      <nav class="nav" aria-label="Utama">
+        <a href="index.html">Beranda</a>
+        <a href="projects.html" aria-current="page">Project</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+      <div class="hdr-right">
+        <div class="lang" role="group" aria-label="Bahasa">
+          <a
+            href="project-openclaw.html"
+            hreflang="id"
+            lang="id"
+            aria-current="true"
+            >ID</a
+          >
+          <a href="en/project-openclaw.html" hreflang="en" lang="en">EN</a>
+        </div>
+        <a
+          class="btn btn-primary hdr-wa"
+          href="https://wa.me/6281200000000?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20OpenClaw.%20Saya%20tertarik%20bot%20WhatsApp%20untuk%20usaha%20saya."
+          rel="noopener"
+          >Chat WA</a
+        >
+        <button
+          class="key"
+          type="button"
+          data-palette-open
+          aria-label="Cari dan navigasi (Command K)"
+        >
+          ⌘<span class="k">K</span>
+        </button>
+        <button class="burger" type="button" data-menu aria-label="Buka menu">
+          <i></i><i></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <p class="greet"><a href="projects.html">← Semua project</a></p>
+        <h1 class="poster">
+          <span class="p1">OPEN</span><span class="p2">claw</span>
+        </h1>
+        <div class="glow" aria-hidden="true"></div>
+        <p class="greet" style="margin: 18px 0 0">
+          Asisten AI · WhatsApp + Telegram
+        </p>
+        <p style="margin: 14px 0 0">
+          <span class="badge badge-own">DIPAKAI SENDIRI</span>
+        </p>
+        <p class="lede" style="margin-top: 16px">
+          Pencatat pengeluaran keluarga tanpa aplikasi yang perlu diinstal —
+          cukup kirim pesan seperti ke orang, dan transaksinya tercatat.
+        </p>
+        <div class="cta-row">
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/6281200000000?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20OpenClaw.%20Saya%20tertarik%20bot%20WhatsApp%20untuk%20usaha%20saya."
+            rel="noopener"
+            >Mau bot WhatsApp untuk usaha Anda? Chat →</a
+          >
+        </div>
+      </section>
+
+      <dl class="meta">
+        <div>
+          <dt>JENIS</dt>
+          <dd>Asisten chat</dd>
+        </div>
+        <div>
+          <dt>PEMAKAI</dt>
+          <dd>Keluarga sendiri</dd>
+        </div>
+        <div>
+          <dt>RUNTIME</dt>
+          <dd>Node 24</dd>
+        </div>
+        <div>
+          <dt>DATA</dt>
+          <dd>Buku kas CSV</dd>
+        </div>
+      </dl>
+
+      <div class="split">
+        <div>
+          <h2 class="eyebrow">Idenya</h2>
+          <p style="color: var(--ink-2); max-width: 62ch">
+            Aplikasi anggaran gagal karena tidak ada yang membukanya. Antarmuka
+            termurah yang sudah dipakai keluarga setiap hari adalah chat —
+            jadi pencatatnya dipindah ke sana.
+          </p>
+          <h2 class="eyebrow" style="margin-top: 28px">Cara ia tetap hidup</h2>
+          <p style="color: var(--ink-2); max-width: 62ch">
+            Tiga penyedia model di belakang satu gateway: Groq lebih dulu karena
+            cepat, DeepSeek saat kena batas pemakaian, Claude sebagai cadangan
+            terakhir. Penyedia yang gagal berarti pindah jalur, bukan mati.
+          </p>
+        </div>
+        <div>
+          <h2 class="eyebrow">Dibangun dengan</h2>
+          <ul class="tags">
+            <li>Node 24</li>
+            <li>OpenClaw</li>
+            <li>Groq</li>
+            <li>DeepSeek</li>
+            <li>Claude</li>
+            <li>CSV</li>
+          </ul>
+          <h2 class="eyebrow">Dalam angka</h2>
+          <div class="numbers">
+            <div><b>3</b><span>PENYEDIA AI</span></div>
+            <div><b>2</b><span>PLATFORM CHAT</span></div>
+            <div><b>0</b><span>APLIKASI UNTUK DIINSTAL</span></div>
+            <div><b>1</b><span>BUKU KAS</span></div>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <h2 class="eyebrow">Fitur utama</h2>
+        <ul class="features">
+          <li>Mencatat pengeluaran dari pesan biasa, tanpa format khusus</li>
+          <li>WhatsApp dan Telegram dilayani dari satu gateway</li>
+          <li>Pindah ke penyedia AI berikutnya saat error atau kena batas</li>
+          <li>Ingat kategori, akun, dan konteks rumah tangga</li>
+          <li>Semua transaksi di satu buku kas CSV, dengan cadangan</li>
+          <li>Jalan di mesin sendiri — tanpa langganan per anggota keluarga</li>
+        </ul>
+      </section>
+
+      <nav class="pager" aria-label="Navigasi studi kasus">
+        <a href="project-litera.html"><small>← SEBELUMNYA</small><b>Litera</b></a>
+        <a href="projects.html"><small>KEMBALI →</small><b>Semua project</b></a>
+      </nav>
+    </main>
+
+    <footer class="ftr">
+      <div class="ftr-bar">
+        <strong>© 2026 Eryanto Agusriadi · Hak cipta dilindungi</strong>
+        <span>Dirancang &amp; dibangun oleh Eryanto · Dibuat di Pekanbaru</span>
+        <a href="#main">Kembali ke atas ↑</a>
+      </div>
+    </footer>
+
+    <dialog class="palette" id="palette" aria-label="Cari dan navigasi">
+      <div class="palette-inner">
+        <div class="palette-top">
+          <label class="sr" for="pq">Cari</label>
+          <input
+            id="pq"
+            type="search"
+            placeholder="Cari halaman atau project…"
+            autocomplete="off"
+          />
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/6281200000000?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20OpenClaw.%20Saya%20tertarik%20bot%20WhatsApp%20untuk%20usaha%20saya."
+            rel="noopener"
+            style="padding: 11px 16px"
+            >Chat WA</a
+          >
+        </div>
+        <div class="palette-body">
+          <p>HALAMAN</p>
+          <ul>
+            <li><a href="index.html">⌂ Beranda</a></li>
+            <li><a href="projects.html">▤ Project</a></li>
+            <li><a href="contact.html">◍ Kontak</a></li>
+          </ul>
+          <p>STUDI KASUS</p>
+          <ul>
+            <li><a href="project-fh-superapp.html">FH Superapp</a></li>
+            <li><a href="project-litera.html">Litera</a></li>
+            <li>
+              <a href="project-openclaw.html" aria-current="page">OpenClaw</a>
+            </li>
+          </ul>
+          <p>PROJECT MANDIRI</p>
+          <ul>
+            <li><a href="projects.html#p-umkm-connect">UMKM Connect</a></li>
+            <li><a href="projects.html#p-jago-pos">Jago POS</a></li>
+            <li><a href="projects.html#p-qr-order">QR Order</a></li>
+            <li><a href="projects.html#p-kasir-ai">Kasir AI</a></li>
+            <li><a href="projects.html#p-cafe-system">Café System</a></li>
+            <li><a href="projects.html#p-hadir">Hadir</a></li>
+            <li><a href="projects.html#p-laundry">Laundry Multi-Outlet</a></li>
+            <li><a href="projects.html#p-glowup">Glowup Clinic</a></li>
+            <li><a href="projects.html#p-sigap">Sigap Delivery</a></li>
+          </ul>
+          <p>TERHUBUNG</p>
+          <ul class="inline">
+            <li><a href="https://github.com/" rel="noopener">GitHub ↗</a></li>
+            <li>
+              <a href="https://linkedin.com/" rel="noopener">LinkedIn ↗</a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/6281200000000?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20OpenClaw.%20Saya%20tertarik%20bot%20WhatsApp%20untuk%20usaha%20saya."
+                rel="noopener"
+                >WhatsApp ↗</a
+              >
+            </li>
+          </ul>
+          <p>LEGAL</p>
+          <ul class="inline">
+            <li><a href="privacy.html">Kebijakan Privasi</a></li>
+            <li><a href="terms.html">Ketentuan Penggunaan</a></li>
+          </ul>
+          <p class="palette-empty" data-palette-empty hidden>
+            Tidak ada yang cocok.
+          </p>
+        </div>
+        <div class="palette-foot">
+          <span>↑↓ pilih · ⏎ buka</span><span>Esc untuk menutup</span>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

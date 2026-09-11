@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projects — Eryanto Agusriadi</title>
+    <meta
+      name="description"
+      content="Twelve projects, labelled honestly: point-of-sale, attendance, services, delivery and bots — built with Flutter, Laravel and Node.js."
+    />
+    <meta property="og:title" content="Projects — Eryanto Agusriadi" />
+    <meta property="og:image" content="../og.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="id_ID" />
+    <link rel="alternate" hreflang="id" href="../projects.html" />
+    <link rel="alternate" hreflang="en" href="projects.html" />
+    <link rel="alternate" hreflang="x-default" href="../projects.html" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="../fonts/SpaceGrotesk-Variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="hdr">
+      <a class="wordmark" href="index.html">ERYANTO<span>.dev</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="hdr-right">
+        <div class="lang" role="group" aria-label="Language">
+          <a href="../projects.html" hreflang="id" lang="id">ID</a>
+          <a href="projects.html" hreflang="en" lang="en" aria-current="true"
+            >EN</a
+          >
+        </div>
+        <a
+          class="btn btn-primary hdr-wa"
+          href="https://wa.me/6281200000000?text=Hi%20Eryanto%2C%20I%20looked%20through%20your%20projects%20and%20have%20a%20question."
+          rel="noopener"
+          >Chat on WhatsApp</a
+        >
+        <button
+          class="key"
+          type="button"
+          data-palette-open
+          aria-label="Search and navigate (Command K)"
+        >
+          ⌘<span class="k">K</span>
+        </button>
+        <button class="burger" type="button" data-menu aria-label="Open menu">
+          <i></i><i></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <p class="greet"><a href="index.html">← Back home</a></p>
+        <h1 class="poster">
+          <span class="p1">PROJECTS</span><span class="p2">all of them.</span>
+        </h1>
+        <div class="glow" aria-hidden="true"></div>
+        <p class="lede" style="margin-top: 22px">
+          Twelve projects, labelled honestly: which ones people use, which one I
+          use myself, and which ones I built independently.
+        </p>
+        <ul class="legend">
+          <li>
+            <span class="badge badge-field">IN USE</span> used by people
+            outside my household
+          </li>
+          <li>
+            <span class="badge badge-own">PERSONAL USE</span> used by me and my
+            family every day
+          </li>
+          <li>
+            <span class="badge">INDEPENDENT PROJECT</span> built on my own
+            initiative, ready to adapt to your business
+          </li>
+        </ul>
+      </section>
+
+      <div class="marquee amber" aria-hidden="true">
+        <div class="marquee-track">
+          <ul>
+            <li>POS &amp; cafés</li>
+            <li>Attendance &amp; campus</li>
+            <li>Laundries &amp; clinics</li>
+            <li>Delivery</li>
+            <li>Bots &amp; AI</li>
+          </ul>
+          <ul>
+            <li>POS &amp; cafés</li>
+            <li>Attendance &amp; campus</li>
+            <li>Laundries &amp; clinics</li>
+            <li>Delivery</li>
+            <li>Bots &amp; AI</li>
+          </ul>
+        </div>
+      </div>
+
+      <section>
+        <div class="filters">
+          <ul class="chips" role="group" aria-label="Filter projects by business type">
+            <li>
+              <button class="chip" type="button" data-filter="all" aria-pressed="true">
+                All
+              </button>
+            </li>
+            <li>
+              <button class="chip" type="button" data-filter="kasir" aria-pressed="false">
+                POS &amp; cafés
+              </button>
+            </li>
+            <li>
+              <button class="chip" type="button" data-filter="kampus" aria-pressed="false">
+                Attendance &amp; campus
+              </button>
+            </li>
+            <li>
+              <button class="chip" type="button" data-filter="layanan" aria-pressed="false">
+                Services
+              </button>
+            </li>
+            <li>
+              <button class="chip" type="button" data-filter="pengiriman" aria-pressed="false">
+                Delivery
+              </button>
+            </li>
+            <li>
+              <button class="chip" type="button" data-filter="bot" aria-pressed="false">
+                Bots &amp; AI
+              </button>
+            </li>
+          </ul>
+          <p
+            class="count"
+            data-count-label
+            data-format="Showing {n} of {total}"
+            aria-live="polite"
+          >
+            Showing 12 of 12
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card" id="p-fh-superapp" data-cat="kampus">
+            <div class="card-top">
+              <span class="card-num">01</span
+              ><span class="card-meta">Campus · Portal</span>
+            </div>
+            <div class="card-body">
+              <span class="badge badge-field">IN USE</span>
+              <h3><a href="project-fh-superapp.html">FH Superapp</a></h3>
+              <p>
+                Eight UIR Faculty of Law apps at one address behind one login —
+                exam attendance, lecture registers, special classes, grades and
+                student data.
+              </p>
+              <p class="tech">Node.js · Express · ExcelJS · SQLite</p>
+              <span class="more">Read the case study →</span>
+            </div>
+          </article>
+          <article class="card" id="p-litera" data-cat="kampus">
+            <div class="card-top">
+              <span class="card-num">02</span
+              ><span class="card-meta">Research · Web app</span>
+            </div>
+            <div class="card-body">
+              <span class="badge badge-field">IN USE</span>
+              <h3><a href="project-litera.html">Litera</a></h3>
+              <p>
+                Searches five academic sources at once, with citation export and
+                PDF translation that keeps the layout intact.
+              </p>
+              <p class="tech">Laravel 12 · React · MySQL</p>
+              <span class="more">Read the case study →</span>
+            </div>
+          </article>
+          <article class="card" id="p-openclaw" data-cat="bot">
+            <div class="card-top">
+              <span class="card-num">03</span
+              ><span class="card-meta">Bots &amp; AI · WhatsApp</span>
+            </div>
+            <div class="card-body">
+              <span class="badge badge-own">PERSONAL USE</span>
+              <h3><a href="project-openclaw.html">OpenClaw</a></h3>
+              <p>
+                Family expense tracker inside WhatsApp and Telegram, with three
+                AI providers and automatic fallback.
+              </p>
+              <p class="tech">Node 24 · Groq · DeepSeek · Claude</p>
+              <span class="more">Read the case study →</span>
+            </div>
+          </article>
+          <article class="card" id="p-umkm-connect" data-cat="kasir">
+            <div class="card-top">
+              <span class="card-num">04</span
+              ><span class="card-meta">POS · 2025</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">INDEPENDENT PROJECT</span>
+              <h3>UMKM Connect</h3>
+              <p>
+                Cashier for micro-merchants: barcode scanning, tax and discount
+                rules, multi-outlet staff roles, and Bluetooth thermal receipts
+                printed straight from the phone.
+              </p>
+              <p class="tech">Flutter · Bloc · ESC/POS · Laravel 12</p>
+            </div>
+          </article>
+          <article class="card" id="p-jago-pos" data-cat="kasir">
+            <div class="card-top">
+              <span class="card-num">05</span
+              ><span class="card-meta">POS · 2026</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">INDEPENDENT PROJECT</span>
+              <h3>Jago POS</h3>
+              <p>
+                Retail cashier that runs entirely without internet, with cloud
+                backup of its data.
+              </p>
+              <p class="tech">Flutter · fully offline · cloud backup</p>
+            </div>
+          </article>
+          <article class="card" id="p-qr-order" data-cat="kasir">
+            <div class="card-top">
+              <span class="card-num">06</span
+              ><span class="card-meta">Payments · 2026</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">INDEPENDENT PROJECT</span>
+              <h3>QR Order</h3>
+              <p>
+                Guests order from the table by scanning a QR code, orders land
+                on the cashier tablet, and payment settles by QRIS through
+                Midtrans.
+              </p>
+              <p class="tech">Flutter · Laravel 12 · Midtrans QRIS</p>
+            </div>
+          </article>
+          <article class="card" id="p-kasir-ai" data-cat="kasir">
+            <div class="card-top">
+              <span class="card-num">07</span
+              ><span class="card-meta">POS · 2026</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">INDEPENDENT PROJECT</span>
+              <h3>Kasir AI</h3>
+              <p>
+                Online/offline cashier for multiple businesses and outlets,
+                wired to AI automation through n8n.
+              </p>
+              <p class="tech">Flutter · Laravel · n8n</p>
+            </div>
+          </article>
+          <article class="card" id="p-cafe-system" data-cat="kasir">
+            <div class="card-top">
+              <span class="card-num">08</span
+              ><span class="card-meta">POS · 2025</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">INDEPENDENT PROJECT</span>
+              <h3>Café System</h3>
+              <p>
+                Open/close shifts, open bills, cashier reconciliation and a
+                daily report emailed to the owner automatically.
+              </p>
+              <p class="tech">Flutter · Laravel · MySQL</p>
+              <p class="origin">Origin: built from course material.</p>
+            </div>
+          </article>
+          <article class="card" id="p-hadir" data-cat="kampus">
+            <div class="card-top">
+              <span class="card-num">09</span
+              ><span class="card-meta">Attendance · 2025</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">INDEPENDENT PROJECT</span>
+              <h3>Hadir</h3>
+              <p>
+                Attendance with face and liveness detection (eye blink), GPS
+                geofencing and a QR scan mode.
+              </p>
+              <p class="tech">Flutter · ML Kit · Laravel 11</p>
+              <p class="origin">Origin: built from course material.</p>
+            </div>
+          </article>
+          <article class="card" id="p-laundry" data-cat="layanan">
+            <div class="card-top">
+              <span class="card-num">10</span
+              ><span class="card-meta">Services · 2024</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">INDEPENDENT PROJECT</span>
+              <h3>Laundry Multi-Outlet</h3>
+              <p>
+                Orders, customers, services, stock, loyalty and reports for a
+                multi-outlet laundry — usable with no signal.
+              </p>
+              <p class="tech">Flutter · Supabase · offline cache</p>
+            </div>
+          </article>
+          <article class="card" id="p-glowup" data-cat="layanan">
+            <div class="card-top">
+              <span class="card-num">11</span
+              ><span class="card-meta">Services · 2025</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">INDEPENDENT PROJECT</span>
+              <h3>Glowup Clinic</h3>
+              <p>
+                Beauty clinic booking and treatment records, designed for
+                front-desk use on phones and tablets.
+              </p>
+              <p class="tech">Laravel 12 · Flutter · responsive</p>
+              <p class="origin">Origin: built from course material.</p>
+            </div>
+          </article>
+          <article class="card" id="p-sigap" data-cat="pengiriman">
+            <div class="card-top">
+              <span class="card-num">12</span
+              ><span class="card-meta">Delivery · 2023</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">INDEPENDENT PROJECT</span>
+              <h3>Sigap Delivery</h3>
+              <p>
+                Three apps in one system — customer, restaurant and driver —
+                with live tracking.
+              </p>
+              <p class="tech">Flutter ×3 · Laravel 11 · Firestore · Maps</p>
+              <p class="origin">Origin: built from course material.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty" data-empty hidden>
+          <h3>Nothing here — yet.</h3>
+          <p>
+            Just ask — the system you need may well be close to one of the
+            projects above.
+          </p>
+          <div class="cta-row">
+            <a
+              class="btn btn-ghost"
+              href="https://wa.me/6281200000000?text=Hi%20Eryanto%2C%20I%20looked%20through%20your%20projects%20and%20have%20a%20question."
+              rel="noopener"
+              >Chat on WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ftr">
+      <div class="ftr-bar">
+        <strong>© 2026 Eryanto Agusriadi · All rights reserved</strong>
+        <span>Designed &amp; built by Eryanto · Made in Pekanbaru, ID</span>
+        <a href="#main">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <dialog class="palette" id="palette" aria-label="Search and navigate">
+      <div class="palette-inner">
+        <div class="palette-top">
+          <label class="sr" for="pq">Search</label>
+          <input
+            id="pq"
+            type="search"
+            placeholder="Jump to a page or project…"
+            autocomplete="off"
+          />
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/6281200000000?text=Hi%20Eryanto%2C%20I%20looked%20through%20your%20projects%20and%20have%20a%20question."
+            rel="noopener"
+            style="padding: 11px 16px"
+            >WhatsApp</a
+          >
+        </div>
+        <div class="palette-body">
+          <p>PAGES</p>
+          <ul>
+            <li><a href="index.html">⌂ Home</a></li>
+            <li><a href="projects.html" aria-current="page">▤ Projects</a></li>
+            <li><a href="contact.html">◍ Contact</a></li>
+          </ul>
+          <p>CASE STUDIES</p>
+          <ul>
+            <li><a href="project-fh-superapp.html">FH Superapp</a></li>
+            <li><a href="project-litera.html">Litera</a></li>
+            <li><a href="project-openclaw.html">OpenClaw</a></li>
+          </ul>
+          <p>INDEPENDENT PROJECTS</p>
+          <ul>
+            <li><a href="projects.html#p-umkm-connect">UMKM Connect</a></li>
+            <li><a href="projects.html#p-jago-pos">Jago POS</a></li>
+            <li><a href="projects.html#p-qr-order">QR Order</a></li>
+            <li><a href="projects.html#p-kasir-ai">Kasir AI</a></li>
+            <li><a href="projects.html#p-cafe-system">Café System</a></li>
+            <li><a href="projects.html#p-hadir">Hadir</a></li>
+            <li><a href="projects.html#p-laundry">Laundry Multi-Outlet</a></li>
+            <li><a href="projects.html#p-glowup">Glowup Clinic</a></li>
+            <li><a href="projects.html#p-sigap">Sigap Delivery</a></li>
+          </ul>
+          <p>CONNECT</p>
+          <ul class="inline">
+            <li><a href="https://github.com/" rel="noopener">GitHub ↗</a></li>
+            <li>
+              <a href="https://linkedin.com/" rel="noopener">LinkedIn ↗</a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/6281200000000?text=Hi%20Eryanto%2C%20I%20looked%20through%20your%20projects%20and%20have%20a%20question."
+                rel="noopener"
+                >WhatsApp ↗</a
+              >
+            </li>
+          </ul>
+          <p>LEGAL</p>
+          <ul class="inline">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+          <p class="palette-empty" data-palette-empty hidden>No matches.</p>
+        </div>
+        <div class="palette-foot">
+          <span>↑↓ select · ⏎ open</span><span>Esc to close</span>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="../app.js" defer></script>
+  </body>
+</html>

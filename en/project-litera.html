@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Litera — Eryanto Agusriadi</title>
+    <meta
+      name="description"
+      content="Journal search across five academic sources, with a library, citation export and PDF translation that keeps the layout intact. Laravel 12 + React."
+    />
+    <meta property="og:title" content="Litera — case study" />
+    <meta property="og:image" content="../og.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="id_ID" />
+    <link rel="alternate" hreflang="id" href="../project-litera.html" />
+    <link rel="alternate" hreflang="en" href="project-litera.html" />
+    <link rel="alternate" hreflang="x-default" href="../project-litera.html" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="../fonts/SpaceGrotesk-Variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="hdr">
+      <a class="wordmark" href="index.html">ERYANTO<span>.dev</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="hdr-right">
+        <div class="lang" role="group" aria-label="Language">
+          <a href="../project-litera.html" hreflang="id" lang="id">ID</a>
+          <a
+            href="project-litera.html"
+            hreflang="en"
+            lang="en"
+            aria-current="true"
+            >EN</a
+          >
+        </div>
+        <a
+          class="btn btn-primary hdr-wa"
+          href="https://wa.me/6281200000000?text=Hi%20Eryanto%2C%20I%20read%20your%20Litera%20case%20study.%20I%20have%20a%20similar%20need."
+          rel="noopener"
+          >Chat on WhatsApp</a
+        >
+        <button
+          class="key"
+          type="button"
+          data-palette-open
+          aria-label="Search and navigate (Command K)"
+        >
+          ⌘<span class="k">K</span>
+        </button>
+        <button class="burger" type="button" data-menu aria-label="Open menu">
+          <i></i><i></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <p class="greet"><a href="projects.html">← All projects</a></p>
+        <h1 class="poster">
+          <span class="p1">LITERA</span><span class="p2">search &amp; translate.</span>
+        </h1>
+        <div class="glow" aria-hidden="true"></div>
+        <p class="greet" style="margin: 18px 0 0">
+          Research · Web app · Used for doctoral dissertation work
+        </p>
+        <p style="margin: 14px 0 0">
+          <span class="badge badge-field">IN USE</span>
+        </p>
+        <p class="lede" style="margin-top: 16px">
+          Searches five academic sources at once, saves papers to a library,
+          then translates the PDF without breaking its equations and tables.
+        </p>
+        <div class="cta-row">
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/6281200000000?text=Hi%20Eryanto%2C%20I%20read%20your%20Litera%20case%20study.%20I%20have%20a%20similar%20need."
+            rel="noopener"
+            >Need something similar? WhatsApp →</a
+          >
+        </div>
+      </section>
+
+      <dl class="meta">
+        <div>
+          <dt>TYPE</dt>
+          <dd>Web app + REST API</dd>
+        </div>
+        <div>
+          <dt>USED BY</dt>
+          <dd>A doctoral researcher</dd>
+        </div>
+        <div>
+          <dt>STACK</dt>
+          <dd>Laravel 12 + React</dd>
+        </div>
+        <div>
+          <dt>TRANSLATION</dt>
+          <dd>LibreTranslate / LLM</dd>
+        </div>
+      </dl>
+
+      <div class="split">
+        <div>
+          <h2 class="eyebrow">The problem</h2>
+          <p style="color: var(--ink-2); max-width: 62ch">
+            Dissertation research meant opening five journal search sites one
+            by one, copying citations by hand, and translating foreign-language
+            PDFs whose layout fell apart the moment the text was copied out.
+          </p>
+          <h2 class="eyebrow" style="margin-top: 28px">How it works</h2>
+          <p style="color: var(--ink-2); max-width: 62ch">
+            One query runs in parallel against OpenAlex, Semantic Scholar,
+            CrossRef, DOAJ and Garuda; the results are merged and de-duplicated
+            by DOI and title. Translation runs on a queue: a free fast mode
+            through LibreTranslate, and an accurate mode through an LLM with a
+            monthly quota per user.
+          </p>
+        </div>
+        <div>
+          <h2 class="eyebrow">Built with</h2>
+          <ul class="tags">
+            <li>Laravel 12</li>
+            <li>React (Vite)</li>
+            <li>MySQL</li>
+            <li>Sanctum</li>
+            <li>LibreTranslate</li>
+            <li>pdf2zh</li>
+          </ul>
+          <h2 class="eyebrow">In numbers</h2>
+          <div class="numbers">
+            <div><b>5</b><span>JOURNAL SOURCES</span></div>
+            <div><b>2</b><span>CITATION FORMATS</span></div>
+            <div><b>2</b><span>TRANSLATION MODES</span></div>
+            <div><b>2</b><span>FILES PER PDF</span></div>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <h2 class="eyebrow">Core features</h2>
+        <ul class="features">
+          <li>Federated search with year, open-access, language and source filters</li>
+          <li>Per-user library: saved papers, folders, tags and notes</li>
+          <li>BibTeX and RIS citation export for Mendeley, Zotero and Word</li>
+          <li>Per-user search history</li>
+          <li>Translation of plain text, abstracts or uploaded PDFs</li>
+          <li>Bilingual PDFs that keep equations, tables and figures intact</li>
+          <li>Multi-user, with token-based login</li>
+        </ul>
+      </section>
+
+      <nav class="pager" aria-label="Case study navigation">
+        <a href="project-fh-superapp.html"
+          ><small>← PREVIOUS</small><b>FH Superapp</b></a
+        >
+        <a href="project-openclaw.html"><small>NEXT →</small><b>OpenClaw</b></a>
+      </nav>
+    </main>
+
+    <footer class="ftr">
+      <div class="ftr-bar">
+        <strong>© 2026 Eryanto Agusriadi · All rights reserved</strong>
+        <span>Designed &amp; built by Eryanto · Made in Pekanbaru, ID</span>
+        <a href="#main">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <dialog class="palette" id="palette" aria-label="Search and navigate">
+      <div class="palette-inner">
+        <div class="palette-top">
+          <label class="sr" for="pq">Search</label>
+          <input
+            id="pq"
+            type="search"
+            placeholder="Jump to a page or project…"
+            autocomplete="off"
+          />
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/6281200000000?text=Hi%20Eryanto%2C%20I%20read%20your%20Litera%20case%20study.%20I%20have%20a%20similar%20need."
+            rel="noopener"
+            style="padding: 11px 16px"
+            >WhatsApp</a
+          >
+        </div>
+        <div class="palette-body">
+          <p>PAGES</p>
+          <ul>
+            <li><a href="index.html">⌂ Home</a></li>
+            <li><a href="projects.html">▤ Projects</a></li>
+            <li><a href="contact.html">◍ Contact</a></li>
+          </ul>
+          <p>CASE STUDIES</p>
+          <ul>
+            <li><a href="project-fh-superapp.html">FH Superapp</a></li>
+            <li><a href="project-litera.html" aria-current="page">Litera</a></li>
+            <li><a href="project-openclaw.html">OpenClaw</a></li>
+          </ul>
+          <p>INDEPENDENT PROJECTS</p>
+          <ul>
+            <li><a href="projects.html#p-umkm-connect">UMKM Connect</a></li>
+            <li><a href="projects.html#p-jago-pos">Jago POS</a></li>
+            <li><a href="projects.html#p-qr-order">QR Order</a></li>
+            <li><a href="projects.html#p-kasir-ai">Kasir AI</a></li>
+            <li><a href="projects.html#p-cafe-system">Café System</a></li>
+            <li><a href="projects.html#p-hadir">Hadir</a></li>
+            <li><a href="projects.html#p-laundry">Laundry Multi-Outlet</a></li>
+            <li><a href="projects.html#p-glowup">Glowup Clinic</a></li>
+            <li><a href="projects.html#p-sigap">Sigap Delivery</a></li>
+          </ul>
+          <p>CONNECT</p>
+          <ul class="inline">
+            <li><a href="https://github.com/" rel="noopener">GitHub ↗</a></li>
+            <li>
+              <a href="https://linkedin.com/" rel="noopener">LinkedIn ↗</a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/6281200000000?text=Hi%20Eryanto%2C%20I%20read%20your%20Litera%20case%20study.%20I%20have%20a%20similar%20need."
+                rel="noopener"
+                >WhatsApp ↗</a
+              >
+            </li>
+          </ul>
+          <p>LEGAL</p>
+          <ul class="inline">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+          <p class="palette-empty" data-palette-empty hidden>No matches.</p>
+        </div>
+        <div class="palette-foot">
+          <span>↑↓ select · ⏎ open</span><span>Esc to close</span>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="../app.js" defer></script>
+  </body>
+</html>

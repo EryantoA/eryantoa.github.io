@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FH Superapp — Eryanto Agusriadi</title>
+    <meta
+      name="description"
+      content="Eight UIR Faculty of Law apps at one address behind one login: a zero-dependency Node.js portal and reverse proxy."
+    />
+    <meta property="og:title" content="FH Superapp — case study" />
+    <meta property="og:image" content="../og.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="id_ID" />
+    <link rel="alternate" hreflang="id" href="../project-fh-superapp.html" />
+    <link rel="alternate" hreflang="en" href="project-fh-superapp.html" />
+    <link rel="alternate" hreflang="x-default" href="../project-fh-superapp.html" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="../fonts/SpaceGrotesk-Variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="hdr">
+      <a class="wordmark" href="index.html">ERYANTO<span>.dev</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="hdr-right">
+        <div class="lang" role="group" aria-label="Language">
+          <a href="../project-fh-superapp.html" hreflang="id" lang="id">ID</a>
+          <a
+            href="project-fh-superapp.html"
+            hreflang="en"
+            lang="en"
+            aria-current="true"
+            >EN</a
+          >
+        </div>
+        <a
+          class="btn btn-primary hdr-wa"
+          href="https://wa.me/6281200000000?text=Hi%20Eryanto%2C%20I%20read%20your%20FH%20Superapp%20case%20study.%20I%20have%20a%20similar%20need."
+          rel="noopener"
+          >Chat on WhatsApp</a
+        >
+        <button
+          class="key"
+          type="button"
+          data-palette-open
+          aria-label="Search and navigate (Command K)"
+        >
+          ⌘<span class="k">K</span>
+        </button>
+        <button class="burger" type="button" data-menu aria-label="Open menu">
+          <i></i><i></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <p class="greet"><a href="projects.html">← All projects</a></p>
+        <h1 class="poster">
+          <span class="p1">FH</span><span class="p2">superapp</span>
+        </h1>
+        <div class="glow" aria-hidden="true"></div>
+        <p class="greet" style="margin: 18px 0 0">
+          Campus · UIR Faculty of Law · Internal portal
+        </p>
+        <p style="margin: 14px 0 0">
+          <span class="badge badge-field">IN USE</span>
+        </p>
+        <p class="lede" style="margin-top: 16px">
+          Eight faculty apps that used to be opened one by one now live at one
+          address behind one login.
+        </p>
+        <div class="cta-row">
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/6281200000000?text=Hi%20Eryanto%2C%20I%20read%20your%20FH%20Superapp%20case%20study.%20I%20have%20a%20similar%20need."
+            rel="noopener"
+            >Need something similar? WhatsApp →</a
+          >
+        </div>
+      </section>
+
+      <dl class="meta">
+        <div>
+          <dt>TYPE</dt>
+          <dd>Portal + reverse proxy</dd>
+        </div>
+        <div>
+          <dt>USED BY</dt>
+          <dd>UIR Faculty of Law staff</dd>
+        </div>
+        <div>
+          <dt>RUNTIME</dt>
+          <dd>Node.js, zero dependencies</dd>
+        </div>
+        <div>
+          <dt>DATA</dt>
+          <dd>Shared Excel files</dd>
+        </div>
+      </dl>
+
+      <div class="split">
+        <div>
+          <h2 class="eyebrow">The problem</h2>
+          <p style="color: var(--ink-2); max-width: 62ch">
+            Every faculty task — printing exam attendance sheets, lecture
+            registers, special classes for working students, grades, news
+            publishing — had its own app, its own address and its own copy of
+            the Excel files.
+          </p>
+          <h2 class="eyebrow" style="margin-top: 28px">How it works</h2>
+          <p style="color: var(--ink-2); max-width: 62ch">
+            The superapp runs each app on an internal port, forwards requests by
+            path prefix (<code>/absen</code>, <code>/nilai</code>,
+            <code>/mahasiswa</code>…), and rewrites links in the responses so
+            navigation stays under the right prefix. None of the apps were torn
+            apart — each one still runs on its own.
+          </p>
+        </div>
+        <div>
+          <h2 class="eyebrow">Built with</h2>
+          <ul class="tags">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>ExcelJS</li>
+            <li>SQLite</li>
+            <li>Headless Chrome (PDF)</li>
+          </ul>
+          <h2 class="eyebrow">In numbers</h2>
+          <div class="numbers">
+            <div><b>8</b><span>APPS, 1 ADDRESS</span></div>
+            <div><b>1</b><span>LOGIN</span></div>
+            <div><b>0</b><span>NPM DEPENDENCIES IN THE PORTAL</span></div>
+            <div><b>1</b><span>SHARED DATA FOLDER</span></div>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <h2 class="eyebrow">Core features</h2>
+        <ul class="features">
+          <li>One login for every app, with signed-cookie sessions</li>
+          <li>Shared Excel files in one folder — replace once, every app follows</li>
+          <li>Exam and lecture attendance sheets printed to PDF and XLSX</li>
+          <li>Special-class rosters for working students built from enrolment data</li>
+          <li>Student grade and transcript lookup by student number</li>
+          <li>Student analytics per intake year, with charts</li>
+          <li>News and announcements published to the faculty WordPress</li>
+          <li>A read-only data API with its own keys for other systems</li>
+        </ul>
+      </section>
+
+      <nav class="pager" aria-label="Case study navigation">
+        <a href="projects.html"><small>← BACK</small><b>All projects</b></a>
+        <a href="project-litera.html"><small>NEXT →</small><b>Litera</b></a>
+      </nav>
+    </main>
+
+    <footer class="ftr">
+      <div class="ftr-bar">
+        <strong>© 2026 Eryanto Agusriadi · All rights reserved</strong>
+        <span>Designed &amp; built by Eryanto · Made in Pekanbaru, ID</span>
+        <a href="#main">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <dialog class="palette" id="palette" aria-label="Search and navigate">
+      <div class="palette-inner">
+        <div class="palette-top">
+          <label class="sr" for="pq">Search</label>
+          <input
+            id="pq"
+            type="search"
+            placeholder="Jump to a page or project…"
+            autocomplete="off"
+          />
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/6281200000000?text=Hi%20Eryanto%2C%20I%20read%20your%20FH%20Superapp%20case%20study.%20I%20have%20a%20similar%20need."
+            rel="noopener"
+            style="padding: 11px 16px"
+            >WhatsApp</a
+          >
+        </div>
+        <div class="palette-body">
+          <p>PAGES</p>
+          <ul>
+            <li><a href="index.html">⌂ Home</a></li>
+            <li><a href="projects.html">▤ Projects</a></li>
+            <li><a href="contact.html">◍ Contact</a></li>
+          </ul>
+          <p>CASE STUDIES</p>
+          <ul>
+            <li>
+              <a href="project-fh-superapp.html" aria-current="page"
+                >FH Superapp</a
+              >
+            </li>
+            <li><a href="project-litera.html">Litera</a></li>
+            <li><a href="project-openclaw.html">OpenClaw</a></li>
+          </ul>
+          <p>INDEPENDENT PROJECTS</p>
+          <ul>
+            <li><a href="projects.html#p-umkm-connect">UMKM Connect</a></li>
+            <li><a href="projects.html#p-jago-pos">Jago POS</a></li>
+            <li><a href="projects.html#p-qr-order">QR Order</a></li>
+            <li><a href="projects.html#p-kasir-ai">Kasir AI</a></li>
+            <li><a href="projects.html#p-cafe-system">Café System</a></li>
+            <li><a href="projects.html#p-hadir">Hadir</a></li>
+            <li><a href="projects.html#p-laundry">Laundry Multi-Outlet</a></li>
+            <li><a href="projects.html#p-glowup">Glowup Clinic</a></li>
+            <li><a href="projects.html#p-sigap">Sigap Delivery</a></li>
+          </ul>
+          <p>CONNECT</p>
+          <ul class="inline">
+            <li><a href="https://github.com/" rel="noopener">GitHub ↗</a></li>
+            <li>
+              <a href="https://linkedin.com/" rel="noopener">LinkedIn ↗</a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/6281200000000?text=Hi%20Eryanto%2C%20I%20read%20your%20FH%20Superapp%20case%20study.%20I%20have%20a%20similar%20need."
+                rel="noopener"
+                >WhatsApp ↗</a
+              >
+            </li>
+          </ul>
+          <p>LEGAL</p>
+          <ul class="inline">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+          <p class="palette-empty" data-palette-empty hidden>No matches.</p>
+        </div>
+        <div class="palette-foot">
+          <span>↑↓ select · ⏎ open</span><span>Esc to close</span>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="../app.js" defer></script>
+  </body>
+</html>

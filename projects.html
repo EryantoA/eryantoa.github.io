@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Project — Eryanto Agusriadi</title>
+    <meta
+      name="description"
+      content="Dua belas project dengan status yang jujur: kasir, absensi, layanan, pengiriman, dan bot — dibangun dengan Flutter, Laravel, dan Node.js."
+    />
+    <meta property="og:title" content="Project — Eryanto Agusriadi" />
+    <meta property="og:image" content="og.png" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <link rel="alternate" hreflang="id" href="projects.html" />
+    <link rel="alternate" hreflang="en" href="en/projects.html" />
+    <link rel="alternate" hreflang="x-default" href="projects.html" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="fonts/SpaceGrotesk-Variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Lewati ke konten</a>
+
+    <header class="hdr">
+      <a class="wordmark" href="index.html">ERYANTO<span>.dev</span></a>
+      <nav class="nav" aria-label="Utama">
+        <a href="index.html">Beranda</a>
+        <a href="projects.html" aria-current="page">Project</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+      <div class="hdr-right">
+        <div class="lang" role="group" aria-label="Bahasa">
+          <a href="projects.html" hreflang="id" lang="id" aria-current="true"
+            >ID</a
+          >
+          <a href="en/projects.html" hreflang="en" lang="en">EN</a>
+        </div>
+        <a
+          class="btn btn-primary hdr-wa"
+          href="https://wa.me/6281200000000?text=Halo%20Eryanto%2C%20saya%20lihat%20daftar%20project%20di%20portfolio%20Anda%20dan%20ingin%20bertanya."
+          rel="noopener"
+          >Chat WA</a
+        >
+        <button
+          class="key"
+          type="button"
+          data-palette-open
+          aria-label="Cari dan navigasi (Command K)"
+        >
+          ⌘<span class="k">K</span>
+        </button>
+        <button class="burger" type="button" data-menu aria-label="Buka menu">
+          <i></i><i></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <p class="greet"><a href="index.html">← Kembali ke beranda</a></p>
+        <h1 class="poster">
+          <span class="p1">PROJECT</span><span class="p2">semua karya.</span>
+        </h1>
+        <div class="glow" aria-hidden="true"></div>
+        <p class="lede" style="margin-top: 22px">
+          Dua belas project, dengan status yang jujur: mana yang dipakai orang,
+          mana yang saya pakai sendiri, dan mana yang saya bangun secara
+          mandiri.
+        </p>
+        <ul class="legend">
+          <li>
+            <span class="badge badge-field">DIPAKAI DI LAPANGAN</span> dipakai
+            orang di luar rumah tangga saya
+          </li>
+          <li>
+            <span class="badge badge-own">DIPAKAI SENDIRI</span> dipakai saya
+            dan keluarga setiap hari
+          </li>
+          <li>
+            <span class="badge">PROJECT MANDIRI</span> dibangun atas inisiatif
+            sendiri, siap disesuaikan untuk usaha Anda
+          </li>
+        </ul>
+      </section>
+
+      <div class="marquee amber" aria-hidden="true">
+        <div class="marquee-track">
+          <ul>
+            <li>Kasir &amp; kafe</li>
+            <li>Absensi &amp; kampus</li>
+            <li>Laundry &amp; klinik</li>
+            <li>Pengiriman</li>
+            <li>Bot &amp; AI</li>
+          </ul>
+          <ul>
+            <li>Kasir &amp; kafe</li>
+            <li>Absensi &amp; kampus</li>
+            <li>Laundry &amp; klinik</li>
+            <li>Pengiriman</li>
+            <li>Bot &amp; AI</li>
+          </ul>
+        </div>
+      </div>
+
+      <section>
+        <div class="filters">
+          <ul class="chips" role="group" aria-label="Saring project menurut jenis usaha">
+            <li>
+              <button class="chip" type="button" data-filter="all" aria-pressed="true">
+                Semua
+              </button>
+            </li>
+            <li>
+              <button class="chip" type="button" data-filter="kasir" aria-pressed="false">
+                Kasir &amp; kafe
+              </button>
+            </li>
+            <li>
+              <button class="chip" type="button" data-filter="kampus" aria-pressed="false">
+                Absensi &amp; kampus
+              </button>
+            </li>
+            <li>
+              <button class="chip" type="button" data-filter="layanan" aria-pressed="false">
+                Layanan
+              </button>
+            </li>
+            <li>
+              <button class="chip" type="button" data-filter="pengiriman" aria-pressed="false">
+                Pengiriman
+              </button>
+            </li>
+            <li>
+              <button class="chip" type="button" data-filter="bot" aria-pressed="false">
+                Bot &amp; AI
+              </button>
+            </li>
+          </ul>
+          <p
+            class="count"
+            data-count-label
+            data-format="Menampilkan {n} dari {total}"
+            aria-live="polite"
+          >
+            Menampilkan 12 dari 12
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card" id="p-fh-superapp" data-cat="kampus">
+            <div class="card-top">
+              <span class="card-num">01</span
+              ><span class="card-meta">Kampus · Portal</span>
+            </div>
+            <div class="card-body">
+              <span class="badge badge-field">DIPAKAI DI LAPANGAN</span>
+              <h3><a href="project-fh-superapp.html">FH Superapp</a></h3>
+              <p>
+                Delapan aplikasi Fakultas Hukum UIR di satu alamat dengan satu
+                login — absen ujian, daftar hadir kuliah, kelas khusus, nilai,
+                dan data mahasiswa.
+              </p>
+              <p class="tech">Node.js · Express · ExcelJS · SQLite</p>
+              <span class="more">Baca studi kasus →</span>
+            </div>
+          </article>
+          <article class="card" id="p-litera" data-cat="kampus">
+            <div class="card-top">
+              <span class="card-num">02</span
+              ><span class="card-meta">Riset · Web app</span>
+            </div>
+            <div class="card-body">
+              <span class="badge badge-field">DIPAKAI DI LAPANGAN</span>
+              <h3><a href="project-litera.html">Litera</a></h3>
+              <p>
+                Pencari jurnal dari lima sumber akademik sekaligus, dengan
+                ekspor sitasi dan terjemahan PDF yang tidak merusak tata letak.
+              </p>
+              <p class="tech">Laravel 12 · React · MySQL</p>
+              <span class="more">Baca studi kasus →</span>
+            </div>
+          </article>
+          <article class="card" id="p-openclaw" data-cat="bot">
+            <div class="card-top">
+              <span class="card-num">03</span
+              ><span class="card-meta">Bot &amp; AI · WhatsApp</span>
+            </div>
+            <div class="card-body">
+              <span class="badge badge-own">DIPAKAI SENDIRI</span>
+              <h3><a href="project-openclaw.html">OpenClaw</a></h3>
+              <p>
+                Pencatat pengeluaran keluarga di dalam WhatsApp dan Telegram,
+                dengan tiga penyedia AI dan fallback otomatis.
+              </p>
+              <p class="tech">Node 24 · Groq · DeepSeek · Claude</p>
+              <span class="more">Baca studi kasus →</span>
+            </div>
+          </article>
+          <article class="card" id="p-umkm-connect" data-cat="kasir">
+            <div class="card-top">
+              <span class="card-num">04</span
+              ><span class="card-meta">Kasir · 2025</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">PROJECT MANDIRI</span>
+              <h3>UMKM Connect</h3>
+              <p>
+                Kasir untuk usaha mikro: scan barcode, aturan pajak dan diskon,
+                peran staf multi-outlet, dan struk thermal Bluetooth langsung
+                dari HP.
+              </p>
+              <p class="tech">Flutter · Bloc · ESC/POS · Laravel 12</p>
+            </div>
+          </article>
+          <article class="card" id="p-jago-pos" data-cat="kasir">
+            <div class="card-top">
+              <span class="card-num">05</span
+              ><span class="card-meta">Kasir · 2026</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">PROJECT MANDIRI</span>
+              <h3>Jago POS</h3>
+              <p>
+                Kasir retail yang berjalan penuh tanpa internet, dengan backup
+                data ke cloud.
+              </p>
+              <p class="tech">Flutter · offline penuh · backup cloud</p>
+            </div>
+          </article>
+          <article class="card" id="p-qr-order" data-cat="kasir">
+            <div class="card-top">
+              <span class="card-num">06</span
+              ><span class="card-meta">Pembayaran · 2026</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">PROJECT MANDIRI</span>
+              <h3>QR Order</h3>
+              <p>
+                Pelanggan memesan dari meja lewat scan QR, pesanan masuk ke
+                tablet kasir, lalu dibayar dengan QRIS lewat Midtrans.
+              </p>
+              <p class="tech">Flutter · Laravel 12 · Midtrans QRIS</p>
+            </div>
+          </article>
+          <article class="card" id="p-kasir-ai" data-cat="kasir">
+            <div class="card-top">
+              <span class="card-num">07</span
+              ><span class="card-meta">Kasir · 2026</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">PROJECT MANDIRI</span>
+              <h3>Kasir AI</h3>
+              <p>
+                Kasir online/offline untuk banyak usaha dan outlet, terhubung ke
+                otomasi AI lewat n8n.
+              </p>
+              <p class="tech">Flutter · Laravel · n8n</p>
+            </div>
+          </article>
+          <article class="card" id="p-cafe-system" data-cat="kasir">
+            <div class="card-top">
+              <span class="card-num">08</span
+              ><span class="card-meta">Kasir · 2025</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">PROJECT MANDIRI</span>
+              <h3>Café System</h3>
+              <p>
+                Buka/tutup shift, open bill, rekonsiliasi kasir, dan laporan
+                harian yang dikirim otomatis ke email pemilik.
+              </p>
+              <p class="tech">Flutter · Laravel · MySQL</p>
+              <p class="origin">Catatan asal-usul: dikembangkan dari materi kelas.</p>
+            </div>
+          </article>
+          <article class="card" id="p-hadir" data-cat="kampus">
+            <div class="card-top">
+              <span class="card-num">09</span
+              ><span class="card-meta">Absensi · 2025</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">PROJECT MANDIRI</span>
+              <h3>Hadir</h3>
+              <p>
+                Absensi dengan deteksi wajah dan liveness (kedipan mata),
+                geofencing GPS, dan mode scan QR.
+              </p>
+              <p class="tech">Flutter · ML Kit · Laravel 11</p>
+              <p class="origin">Catatan asal-usul: dikembangkan dari materi kelas.</p>
+            </div>
+          </article>
+          <article class="card" id="p-laundry" data-cat="layanan">
+            <div class="card-top">
+              <span class="card-num">10</span
+              ><span class="card-meta">Layanan · 2024</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">PROJECT MANDIRI</span>
+              <h3>Laundry Multi-Outlet</h3>
+              <p>
+                Order, pelanggan, layanan, stok, loyalti, dan laporan untuk
+                laundry multi-outlet — tetap bisa dipakai tanpa sinyal.
+              </p>
+              <p class="tech">Flutter · Supabase · cache offline</p>
+            </div>
+          </article>
+          <article class="card" id="p-glowup" data-cat="layanan">
+            <div class="card-top">
+              <span class="card-num">11</span
+              ><span class="card-meta">Layanan · 2025</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">PROJECT MANDIRI</span>
+              <h3>Glowup Clinic</h3>
+              <p>
+                Booking dan catatan perawatan klinik kecantikan, dirancang untuk
+                meja depan di HP dan tablet.
+              </p>
+              <p class="tech">Laravel 12 · Flutter · responsif</p>
+              <p class="origin">Catatan asal-usul: dikembangkan dari materi kelas.</p>
+            </div>
+          </article>
+          <article class="card" id="p-sigap" data-cat="pengiriman">
+            <div class="card-top">
+              <span class="card-num">12</span
+              ><span class="card-meta">Pengiriman · 2023</span>
+            </div>
+            <div class="card-body">
+              <span class="badge">PROJECT MANDIRI</span>
+              <h3>Sigap Delivery</h3>
+              <p>
+                Tiga aplikasi dalam satu sistem — pelanggan, restoran, dan
+                driver — dengan pelacakan langsung.
+              </p>
+              <p class="tech">Flutter ×3 · Laravel 11 · Firestore · Maps</p>
+              <p class="origin">Catatan asal-usul: dikembangkan dari materi kelas.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty" data-empty hidden>
+          <h3>Belum ada project di kategori ini.</h3>
+          <p>
+            Tanyakan saja — sistem yang Anda butuhkan mungkin mirip dengan salah
+            satu project di atas.
+          </p>
+          <div class="cta-row">
+            <a
+              class="btn btn-ghost"
+              href="https://wa.me/6281200000000?text=Halo%20Eryanto%2C%20saya%20lihat%20daftar%20project%20di%20portfolio%20Anda%20dan%20ingin%20bertanya."
+              rel="noopener"
+              >Chat WA</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ftr">
+      <div class="ftr-bar">
+        <strong>© 2026 Eryanto Agusriadi · Hak cipta dilindungi</strong>
+        <span>Dirancang &amp; dibangun oleh Eryanto · Dibuat di Pekanbaru</span>
+        <a href="#main">Kembali ke atas ↑</a>
+      </div>
+    </footer>
+
+    <dialog class="palette" id="palette" aria-label="Cari dan navigasi">
+      <div class="palette-inner">
+        <div class="palette-top">
+          <label class="sr" for="pq">Cari</label>
+          <input
+            id="pq"
+            type="search"
+            placeholder="Cari halaman atau project…"
+            autocomplete="off"
+          />
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/6281200000000?text=Halo%20Eryanto%2C%20saya%20lihat%20daftar%20project%20di%20portfolio%20Anda%20dan%20ingin%20bertanya."
+            rel="noopener"
+            style="padding: 11px 16px"
+            >Chat WA</a
+          >
+        </div>
+        <div class="palette-body">
+          <p>HALAMAN</p>
+          <ul>
+            <li><a href="index.html">⌂ Beranda</a></li>
+            <li><a href="projects.html" aria-current="page">▤ Project</a></li>
+            <li><a href="contact.html">◍ Kontak</a></li>
+          </ul>
+          <p>STUDI KASUS</p>
+          <ul>
+            <li><a href="project-fh-superapp.html">FH Superapp</a></li>
+            <li><a href="project-litera.html">Litera</a></li>
+            <li><a href="project-openclaw.html">OpenClaw</a></li>
+          </ul>
+          <p>PROJECT MANDIRI</p>
+          <ul>
+            <li><a href="projects.html#p-umkm-connect">UMKM Connect</a></li>
+            <li><a href="projects.html#p-jago-pos">Jago POS</a></li>
+            <li><a href="projects.html#p-qr-order">QR Order</a></li>
+            <li><a href="projects.html#p-kasir-ai">Kasir AI</a></li>
+            <li><a href="projects.html#p-cafe-system">Café System</a></li>
+            <li><a href="projects.html#p-hadir">Hadir</a></li>
+            <li><a href="projects.html#p-laundry">Laundry Multi-Outlet</a></li>
+            <li><a href="projects.html#p-glowup">Glowup Clinic</a></li>
+            <li><a href="projects.html#p-sigap">Sigap Delivery</a></li>
+          </ul>
+          <p>TERHUBUNG</p>
+          <ul class="inline">
+            <li><a href="https://github.com/" rel="noopener">GitHub ↗</a></li>
+            <li>
+              <a href="https://linkedin.com/" rel="noopener">LinkedIn ↗</a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/6281200000000?text=Halo%20Eryanto%2C%20saya%20lihat%20daftar%20project%20di%20portfolio%20Anda%20dan%20ingin%20bertanya."
+                rel="noopener"
+                >WhatsApp ↗</a
+              >
+            </li>
+          </ul>
+          <p>LEGAL</p>
+          <ul class="inline">
+            <li><a href="privacy.html">Kebijakan Privasi</a></li>
+            <li><a href="terms.html">Ketentuan Penggunaan</a></li>
+          </ul>
+          <p class="palette-empty" data-palette-empty hidden>
+            Tidak ada yang cocok.
+          </p>
+        </div>
+        <div class="palette-foot">
+          <span>↑↓ pilih · ⏎ buka</span><span>Esc untuk menutup</span>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
