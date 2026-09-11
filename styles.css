@@ -1198,11 +1198,27 @@ input:focus {
 .ftr {
   border-top: 1px solid var(--line);
 }
+/* One row: brand + four link columns. (The mockup's `1.4fr repeat(auto-fit, …)`
+   was invalid — auto-repeat only sits beside fixed-size tracks — so browsers
+   dropped it and stacked every column.) */
 .ftr-cols {
   display: grid;
-  grid-template-columns: 1.4fr repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: minmax(220px, 1.4fr) repeat(4, minmax(0, 1fr));
   gap: 32px;
   padding: clamp(30px, 5vw, 44px) var(--pad) 34px;
+}
+@media (max-width: 900px) {
+  .ftr-cols {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .ftr-cols > :first-child {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 600px) {
+  .ftr-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 .ftr h2 {
   margin: 0 0 14px;

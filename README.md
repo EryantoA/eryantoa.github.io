@@ -95,6 +95,10 @@ fall back to the domain root and the page still renders with fallback fonts.
 - Filters use `aria-pressed`, the result count is `aria-live`, and the active
   filter lives in the URL hash so it can be shared and Back restores it
 - Legal pages use a single column of `<article>`s — CSS columns can split an item
+- The footer is one row of five columns (brand, pages, services, legal,
+  elsewhere) on every page. The mockup's grid declaration was invalid
+  (`1.4fr` beside `repeat(auto-fit, …)`), so browsers dropped it and stacked
+  the columns; under 900px the brand spans the row, under 600px links go 2×2
 - No third-party requests: fonts are self-hosted, there are no forms, cookies or
   analytics
 
