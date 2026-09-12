@@ -70,7 +70,10 @@ fall back to the domain root and the page still renders with fallback fonts.
 
 ## Before you publish — replace these
 
-- `og.png` — a 1200×630 share image (the design is in the mockup file, turn 8c)
+- Nothing — but note `og.png` (ID pages) and `og-en.png` (EN pages) are the
+  1200×630 share images, rendered from an HTML card with headless Chrome
+  (`--window-size=1200,630 --screenshot`) using this repo's own fonts and
+  palette. Re-render them whenever the hero headline changes.
 - Screenshots for the three case studies: add a `<section>` with a `.gallery`
   of real `<img>`s (dummy or blurred personal data, explicit `width`/`height`,
   `loading="lazy"`). Never ship placeholder boxes.
