@@ -70,8 +70,6 @@ fall back to the domain root and the page still renders with fallback fonts.
 
 ## Before you publish — replace these
 
-- `https://linkedin.com/` — the only contact still a placeholder (WhatsApp,
-  email, Telegram and GitHub are the real ones)
 - `og.png` — a 1200×630 share image (the design is in the mockup file, turn 8c)
 - Screenshots for the three case studies: add a `<section>` with a `.gallery`
   of real `<img>`s (dummy or blurred personal data, explicit `width`/`height`,
