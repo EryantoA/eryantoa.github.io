@@ -18,6 +18,8 @@ copy must use (project status, "Ketersediaan", …) are defined in
 | `project-fh-superapp.html` · `project-litera.html` · `project-openclaw.html` | Case studies — only for projects with real users |
 | `contact.html` | WhatsApp first, then email / LinkedIn / GitHub, plus what to prepare |
 | `privacy.html` / `terms.html` | Legal, with sticky contents rail |
+| `gallery.html` | Project gallery — screenshots and stacks for independent projects, no usage claims (ADR 0002) |
+| `img/projects/` | Curated screenshots carried over from the 2023 portfolio: max 900px wide, JPEG q70, never upscaled |
 | `en/*.html` | English mirror of every page above |
 | `404.html` | Custom not-found page, both languages in one file (must keep this exact filename) |
 | `styles.css` | All styling, one file, including the `@font-face` rules |
@@ -68,10 +70,8 @@ fall back to the domain root and the page still renders with fallback fonts.
 
 ## Before you publish — replace these
 
-- `+62 812 0000 0000` and every `wa.me/6281200000000` link (each carries a
-  pre-filled, URL-encoded opening message — keep the `?text=` part)
-- `hello@eryanto.dev`
-- `https://github.com/` and `https://linkedin.com/` profile URLs
+- `https://linkedin.com/` — the only contact still a placeholder (WhatsApp,
+  email, Telegram and GitHub are the real ones)
 - `og.png` — a 1200×630 share image (the design is in the mockup file, turn 8c)
 - Screenshots for the three case studies: add a `<section>` with a `.gallery`
   of real `<img>`s (dummy or blurred personal data, explicit `width`/`height`,

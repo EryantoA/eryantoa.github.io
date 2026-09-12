@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Galeri project — Eryanto Agusriadi</title>
+    <meta
+      name="description"
+      content="Tangkapan layar project Flutter dan React Native yang dibangun mandiri: pesan antar, chat, tiket, toko online, dan konsultasi dokter."
+    />
+    <meta property="og:title" content="Galeri project — Eryanto Agusriadi" />
+    <meta property="og:image" content="og.png" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <link rel="alternate" hreflang="id" href="gallery.html" />
+    <link rel="alternate" hreflang="en" href="en/gallery.html" />
+    <link rel="alternate" hreflang="x-default" href="gallery.html" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="fonts/SpaceGrotesk-Variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Lewati ke konten</a>
+
+    <header class="hdr">
+      <a class="wordmark" href="index.html">ERYANTO<span>.dev</span></a>
+      <nav class="nav" aria-label="Utama">
+        <a href="index.html">Beranda</a>
+        <a href="projects.html" aria-current="page">Project</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+      <div class="hdr-right">
+        <div class="lang" role="group" aria-label="Bahasa">
+          <a
+            href="gallery.html"
+            hreflang="id"
+            lang="id"
+            aria-current="true"
+            >ID</a
+          >
+          <a href="en/gallery.html" hreflang="en" lang="en">EN</a>
+        </div>
+        <a
+          class="btn btn-primary hdr-wa"
+          href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20galeri%20project%20di%20portfolio%20Anda%20dan%20ingin%20diskusi%20soal%20aplikasi%20untuk%20usaha%20saya."
+          rel="noopener"
+          >Chat WA</a
+        >
+        <button
+          class="key"
+          type="button"
+          data-palette-open
+          aria-label="Cari dan navigasi (Command K)"
+        >
+          ⌘<span class="k">K</span>
+        </button>
+        <button class="burger" type="button" data-menu aria-label="Buka menu">
+          <i></i><i></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <p class="greet"><a href="projects.html">← Semua project</a></p>
+        <h1 class="poster"><span class="p1">GALERI</span><span class="p2">project.</span></h1>
+        <div class="glow" aria-hidden="true"></div>
+        <p class="lede" style="margin-top: 18px">
+          Tujuh aplikasi yang saya bangun sendiri untuk belajar dan berlatih.
+          Belum ada yang memakainya di dunia nyata — halaman ini murni
+          tangkapan layar dan teknologinya.
+        </p>
+      </section>
+
+      <section id="p-food-delivery">
+        <span class="badge">PROJECT MANDIRI</span>
+        <h2 style="margin: 10px 0 8px; font: 600 clamp(22px, 3vw, 30px) var(--sans); letter-spacing: -0.03em">Food Delivery</h2>
+        <p style="color: var(--ink-2); max-width: 62ch">Pesan antar makanan: keranjang, checkout, dan pembayaran, dengan panel admin Laravel lewat REST API.</p>
+        <p class="origin">Catatan asal-usul: dibangun mengikuti kelas BuildWithAngga.</p>
+        <ul class="tags" style="margin-top: 14px">
+          <li>Flutter</li>
+          <li>GetX</li>
+          <li>Laravel</li>
+          <li>MySQL</li>
+          <li>Google Maps API</li>
+          <li>Paypal</li>
+        </ul>
+        <div class="gallery">
+            <img src="img/projects/p-food-delivery/01.jpg" width="900" height="2000" loading="lazy" alt="" />
+            <img src="img/projects/p-food-delivery/02.jpg" width="900" height="2000" loading="lazy" alt="" />
+            <img src="img/projects/p-food-delivery/03.jpg" width="900" height="2000" loading="lazy" alt="" />
+            <img src="img/projects/p-food-delivery/04.jpg" width="900" height="2000" loading="lazy" alt="" />
+            <img src="img/projects/p-food-delivery/05.jpg" width="900" height="2000" loading="lazy" alt="" />
+        </div>
+      </section>
+
+      <section id="p-chatting">
+        <span class="badge">PROJECT MANDIRI</span>
+        <h2 style="margin: 10px 0 8px; font: 600 clamp(22px, 3vw, 30px) var(--sans); letter-spacing: -0.03em">Chatting App</h2>
+        <p style="color: var(--ink-2); max-width: 62ch">Kirim pesan teks dan gambar antar perangkat, memakai struktur koleksi dan dokumen Firebase.</p>
+        <p class="origin">Catatan asal-usul: dibangun mengikuti kelas BuildWithAngga.</p>
+        <ul class="tags" style="margin-top: 14px">
+          <li>Flutter</li>
+          <li>GetX</li>
+          <li>Firebase</li>
+        </ul>
+        <div class="gallery">
+            <img src="img/projects/p-chatting/01.jpg" width="678" height="1357" loading="lazy" alt="" />
+            <img src="img/projects/p-chatting/02.jpg" width="678" height="1357" loading="lazy" alt="" />
+            <img src="img/projects/p-chatting/03.jpg" width="678" height="1357" loading="lazy" alt="" />
+            <img src="img/projects/p-chatting/04.jpg" width="678" height="1357" loading="lazy" alt="" />
+        </div>
+      </section>
+
+      <section id="p-airplane">
+        <span class="badge">PROJECT MANDIRI</span>
+        <h2 style="margin: 10px 0 8px; font: 600 clamp(22px, 3vw, 30px) var(--sans); letter-spacing: -0.03em">Airplane</h2>
+        <p style="color: var(--ink-2); max-width: 62ch">Pemesanan tiket pesawat: daftar akun, transaksi, dan detail destinasi. Strukturnya saya tulis ulang memakai Clean Architecture dan TDD.</p>
+        <p class="origin">Catatan asal-usul: dibangun mengikuti kelas BuildWithAngga.</p>
+        <ul class="tags" style="margin-top: 14px">
+          <li>Flutter</li>
+          <li>BloC / Cubit</li>
+          <li>Firebase</li>
+        </ul>
+        <div class="gallery">
+            <img src="img/projects/p-airplane/01.jpg" width="652" height="1412" loading="lazy" alt="" />
+            <img src="img/projects/p-airplane/02.jpg" width="652" height="1412" loading="lazy" alt="" />
+            <img src="img/projects/p-airplane/03.jpg" width="652" height="1412" loading="lazy" alt="" />
+            <img src="img/projects/p-airplane/04.jpg" width="652" height="1412" loading="lazy" alt="" />
+            <img src="img/projects/p-airplane/05.jpg" width="652" height="1412" loading="lazy" alt="" />
+        </div>
+      </section>
+
+      <section id="p-flutix">
+        <span class="badge">PROJECT MANDIRI</span>
+        <h2 style="margin: 10px 0 8px; font: 600 clamp(22px, 3vw, 30px) var(--sans); letter-spacing: -0.03em">Bioskop (Flutix)</h2>
+        <p style="color: var(--ink-2); max-width: 62ch">Beli tiket bioskop dari HP, daftar film diambil dari API TheMovieDB, lalu pilih jadwal dan kursi.</p>
+        <p class="origin">Catatan asal-usul: dibangun mengikuti kelas BuildWithAngga.</p>
+        <ul class="tags" style="margin-top: 14px">
+          <li>Flutter</li>
+          <li>BloC</li>
+          <li>Firebase</li>
+          <li>TheMovieDB API</li>
+        </ul>
+        <div class="gallery">
+            <img src="img/projects/p-flutix/01.jpg" width="652" height="1412" loading="lazy" alt="" />
+            <img src="img/projects/p-flutix/02.jpg" width="652" height="1412" loading="lazy" alt="" />
+            <img src="img/projects/p-flutix/03.jpg" width="652" height="1412" loading="lazy" alt="" />
+            <img src="img/projects/p-flutix/04.jpg" width="652" height="1412" loading="lazy" alt="" />
+            <img src="img/projects/p-flutix/05.jpg" width="652" height="1412" loading="lazy" alt="" />
+        </div>
+      </section>
+
+      <section id="p-furniture">
+        <span class="badge">PROJECT MANDIRI</span>
+        <h2 style="margin: 10px 0 8px; font: 600 clamp(22px, 3vw, 30px) var(--sans); letter-spacing: -0.03em">Furniture Store</h2>
+        <p style="color: var(--ink-2); max-width: 62ch">Katalog furnitur: pencarian, kategori, wishlist, pilihan warna, serta mode terang dan gelap.</p>
+        <p class="origin">Catatan asal-usul: dibangun mengikuti kelas BuildWithAngga.</p>
+        <ul class="tags" style="margin-top: 14px">
+          <li>Flutter</li>
+        </ul>
+        <div class="gallery">
+            <img src="img/projects/p-furniture/01.jpg" width="652" height="1412" loading="lazy" alt="" />
+            <img src="img/projects/p-furniture/02.jpg" width="652" height="1412" loading="lazy" alt="" />
+            <img src="img/projects/p-furniture/03.jpg" width="652" height="1412" loading="lazy" alt="" />
+            <img src="img/projects/p-furniture/04.jpg" width="652" height="1412" loading="lazy" alt="" />
+            <img src="img/projects/p-furniture/05.jpg" width="652" height="1412" loading="lazy" alt="" />
+        </div>
+      </section>
+
+      <section id="p-shamo">
+        <span class="badge">PROJECT MANDIRI</span>
+        <h2 style="margin: 10px 0 8px; font: 600 clamp(22px, 3vw, 30px) var(--sans); letter-spacing: -0.03em">E-commerce (Shamo)</h2>
+        <p style="color: var(--ink-2); max-width: 62ch">Toko sepatu dengan API Laravel, chat antara pembeli dan toko, serta alur pembayaran.</p>
+        <p class="origin">Catatan asal-usul: dibangun mengikuti kelas BuildWithAngga.</p>
+        <ul class="tags" style="margin-top: 14px">
+          <li>Flutter</li>
+          <li>Provider</li>
+          <li>Firebase</li>
+          <li>Laravel API</li>
+        </ul>
+        <div class="gallery">
+            <img src="img/projects/p-shamo/01.jpg" width="678" height="1357" loading="lazy" alt="" />
+            <img src="img/projects/p-shamo/02.jpg" width="678" height="1357" loading="lazy" alt="" />
+            <img src="img/projects/p-shamo/03.jpg" width="678" height="1357" loading="lazy" alt="" />
+            <img src="img/projects/p-shamo/04.jpg" width="678" height="1357" loading="lazy" alt="" />
+            <img src="img/projects/p-shamo/05.jpg" width="678" height="1357" loading="lazy" alt="" />
+        </div>
+      </section>
+
+      <section id="p-doctor">
+        <span class="badge">PROJECT MANDIRI</span>
+        <h2 style="margin: 10px 0 8px; font: 600 clamp(22px, 3vw, 30px) var(--sans); letter-spacing: -0.03em">Doctor Consultation</h2>
+        <p style="color: var(--ink-2); max-width: 62ch">Janji temu dan konsultasi dokter: kategori dokter, chat, dan informasi rumah sakit terdekat.</p>
+        <p class="origin">Catatan asal-usul: dibangun mengikuti kelas BuildWithAngga.</p>
+        <ul class="tags" style="margin-top: 14px">
+          <li>React Native</li>
+          <li>Firebase</li>
+        </ul>
+        <div class="gallery">
+            <img src="img/projects/p-doctor/01.jpg" width="900" height="1884" loading="lazy" alt="" />
+            <img src="img/projects/p-doctor/02.jpg" width="900" height="1884" loading="lazy" alt="" />
+            <img src="img/projects/p-doctor/03.jpg" width="900" height="1884" loading="lazy" alt="" />
+            <img src="img/projects/p-doctor/04.jpg" width="900" height="1884" loading="lazy" alt="" />
+            <img src="img/projects/p-doctor/05.jpg" width="900" height="1884" loading="lazy" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="ftr">
+      <div class="ftr-cols">
+        <div>
+          <h2>ERYANTO<span>.dev</span></h2>
+          <blockquote>“Jalan dulu, lalu dibuat indah.”</blockquote>
+          <p class="status">
+            <span class="dot" aria-hidden="true"></span>Menerima project baru ·
+            Balas WA dalam 1 hari kerja
+          </p>
+          <address>
+            <a href="mailto:eryantoagusriadi793@gmail.com?subject=Diskusi%20project"
+              >eryantoagusriadi793@gmail.com</a
+            ><br />
+            <a
+              href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20galeri%20project%20di%20portfolio%20Anda%20dan%20ingin%20diskusi%20soal%20aplikasi%20untuk%20usaha%20saya."
+              rel="noopener"
+              >+62 822-8778-0309</a
+            ><br />
+            Pekanbaru, Riau · WIB
+          </address>
+        </div>
+        <div>
+          <p class="lbl">HALAMAN</p>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="projects.html">Project</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="lbl">LAYANAN</p>
+          <ul>
+            <li><a href="contact.html">Kasir &amp; pembayaran</a></li>
+            <li><a href="contact.html">Aplikasi mobile</a></li>
+            <li><a href="contact.html">API Laravel</a></li>
+            <li><a href="contact.html">Otomasi AI</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="lbl">LEGAL</p>
+          <ul>
+            <li><a href="privacy.html">Kebijakan Privasi</a></li>
+            <li><a href="terms.html">Ketentuan Penggunaan</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="lbl">DI TEMPAT LAIN</p>
+          <ul>
+            <li><a href="https://github.com/EryantoA" rel="noopener">GitHub ↗</a></li>
+            <li>
+              <a href="https://linkedin.com/" rel="noopener">LinkedIn ↗</a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20galeri%20project%20di%20portfolio%20Anda%20dan%20ingin%20diskusi%20soal%20aplikasi%20untuk%20usaha%20saya."
+                rel="noopener"
+                >WhatsApp ↗</a
+              >
+            </li>
+            <li>
+              <a href="https://t.me/eryantoagusriadi" rel="noopener"
+                >Telegram ↗</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ftr-bar">
+        <strong>© 2026 Eryanto Agusriadi · Hak cipta dilindungi</strong>
+        <span>Dirancang &amp; dibangun oleh Eryanto · Dibuat di Pekanbaru</span>
+        <a href="#main">Kembali ke atas ↑</a>
+      </div>
+    </footer>
+
+    <dialog class="palette" id="palette" aria-label="Cari dan navigasi">
+      <div class="palette-inner">
+        <div class="palette-top">
+          <label class="sr" for="pq">Cari</label>
+          <input
+            id="pq"
+            type="search"
+            placeholder="Cari halaman atau project…"
+            autocomplete="off"
+          />
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20galeri%20project%20di%20portfolio%20Anda%20dan%20ingin%20diskusi%20soal%20aplikasi%20untuk%20usaha%20saya."
+            rel="noopener"
+            style="padding: 11px 16px"
+            >Chat WA</a
+          >
+        </div>
+        <div class="palette-body">
+          <p>HALAMAN</p>
+          <ul>
+            <li><a href="index.html">⌂ Beranda</a></li>
+            <li><a href="projects.html">▤ Project</a></li>
+            <li><a href="contact.html">◍ Kontak</a></li>
+          </ul>
+          <p>STUDI KASUS</p>
+          <ul>
+            <li><a href="project-fh-superapp.html">FH Superapp</a></li>
+            <li><a href="project-litera.html">Litera</a></li>
+            <li><a href="project-openclaw.html">OpenClaw</a></li>
+          </ul>
+          <p>PROJECT MANDIRI</p>
+          <ul>
+            <li><a href="projects.html#p-umkm-connect">UMKM Connect</a></li>
+            <li><a href="projects.html#p-jago-pos">Jago POS</a></li>
+            <li><a href="projects.html#p-qr-order">QR Order</a></li>
+            <li><a href="projects.html#p-kasir-ai">Kasir AI</a></li>
+            <li><a href="projects.html#p-cafe-system">Café System</a></li>
+            <li><a href="projects.html#p-hadir">Hadir</a></li>
+            <li><a href="projects.html#p-laundry">Laundry Multi-Outlet</a></li>
+            <li><a href="projects.html#p-glowup">Glowup Clinic</a></li>
+            <li><a href="projects.html#p-sigap">Sigap Delivery</a></li>
+            <li><a href="gallery.html#p-food-delivery">Food Delivery</a></li>
+            <li><a href="gallery.html#p-shamo">E-commerce (Shamo)</a></li>
+            <li><a href="gallery.html#p-furniture">Furniture Store</a></li>
+            <li><a href="gallery.html#p-flutix">Bioskop (Flutix)</a></li>
+            <li><a href="gallery.html#p-airplane">Airplane</a></li>
+            <li><a href="gallery.html#p-doctor">Doctor Consultation</a></li>
+            <li><a href="gallery.html#p-chatting">Chatting App</a></li>
+          </ul>
+          <p>TERHUBUNG</p>
+          <ul class="inline">
+            <li><a href="https://github.com/EryantoA" rel="noopener">GitHub ↗</a></li>
+            <li>
+              <a href="https://linkedin.com/" rel="noopener">LinkedIn ↗</a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20galeri%20project%20di%20portfolio%20Anda%20dan%20ingin%20diskusi%20soal%20aplikasi%20untuk%20usaha%20saya."
+                rel="noopener"
+                >WhatsApp ↗</a
+              >
+            </li>
+            <li>
+              <a href="https://t.me/eryantoagusriadi" rel="noopener"
+                >Telegram ↗</a
+              >
+            </li>
+          </ul>
+          <p>LEGAL</p>
+          <ul class="inline">
+            <li><a href="privacy.html">Kebijakan Privasi</a></li>
+            <li><a href="terms.html">Ketentuan Penggunaan</a></li>
+          </ul>
+          <p class="palette-empty" data-palette-empty hidden>
+            Tidak ada yang cocok.
+          </p>
+        </div>
+        <div class="palette-foot">
+          <span>↑↓ pilih · ⏎ buka</span><span>Esc untuk menutup</span>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

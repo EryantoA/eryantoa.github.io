@@ -613,6 +613,15 @@ section {
   color: rgba(240, 245, 255, 0.45);
   text-align: center;
 }
+/* real screenshot on a card — the placeholder .shot is never shipped */
+.cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg-soft);
+}
 .card-body {
   padding: 18px;
   display: flex;

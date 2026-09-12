@@ -42,12 +42,16 @@ Keterangan bahwa kode sebuah Project berangkat dari materi kelas atau karya oran
 _Hindari_: credit, based on
 
 **Jenis usaha**:
-Kategori bisnis tempat sebuah Project dipakai atau ditujukan (Kasir & kafe, Absensi & kampus, Layanan, Pengiriman, Bot & AI); dasar filter di halaman Projects.
+Kategori bisnis tempat sebuah Project dipakai atau ditujukan (Kasir & kafe, Absensi & kampus, Layanan, Pengiriman, Bot & AI, Toko & e-commerce, Tiket & travel); dasar filter di halaman Projects.
 _Hindari_: Mobile app / Web app / API (sebagai filter utama)
 
 **Studi kasus**:
 Halaman cerita satu Project; hanya ada untuk Project berstatus Dipakai di lapangan atau Dipakai sendiri.
 _Hindari_: case study (di copy ID), detail page
+
+**Galeri project**:
+Halaman kumpulan tangkapan layar dan daftar teknologi untuk Project mandiri; tidak menceritakan pemakai karena Project mandiri belum punya pemakai.
+_Hindari_: studi kasus (untuk menyebut galeri), showcase
 
 **Unggulan**:
 Project yang ditampilkan di Home; hanya Project berstatus Dipakai di lapangan.
