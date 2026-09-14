@@ -41,6 +41,10 @@ _Hindari_: Latihan, demo, side project
 Keterangan bahwa kode sebuah Project berangkat dari materi kelas atau karya orang lain; berdiri terpisah dari Status Project.
 _Hindari_: credit, based on
 
+**Catatan data**:
+Keterangan bahwa isi layar pada Galeri project adalah data buatan untuk keperluan tangkapan layar, bukan jejak pemakaian nyata; berdiri terpisah dari Catatan asal-usul yang berbicara soal asal kode.
+_Hindari_: dummy, mock, data palsu
+
 **Jenis usaha**:
 Kategori bisnis tempat sebuah Project dipakai atau ditujukan (Kasir & kafe, Absensi & kampus, Layanan, Pengiriman, Bot & AI, Toko & e-commerce, Tiket & travel); dasar filter di halaman Projects.
 _Hindari_: Mobile app / Web app / API (sebagai filter utama)

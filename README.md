@@ -19,7 +19,7 @@ copy must use (project status, "Ketersediaan", …) are defined in
 | `contact.html` | WhatsApp first, then email / LinkedIn / GitHub, plus what to prepare |
 | `privacy.html` / `terms.html` | Legal, with sticky contents rail |
 | `gallery.html` | Project gallery — screenshots and stacks for independent projects, no usage claims (ADR 0002) |
-| `img/projects/` | Curated screenshots carried over from the 2023 portfolio: max 900px wide, JPEG q70, never upscaled |
+| `img/projects/` | Screenshots: max 900px wide, JPEG q70, never upscaled. Most were carried over from the 2023 portfolio; `p-qr-order/` was captured by running the app locally against sample data (see **Catatan data** in `CONTEXT.md`) |
 | `en/*.html` | English mirror of every page above |
 | `404.html` | Custom not-found page, both languages in one file (must keep this exact filename) |
 | `styles.css` | All styling, one file, including the `@font-face` rules |
