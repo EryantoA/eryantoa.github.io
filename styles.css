@@ -688,6 +688,10 @@ section {
   color: var(--ink-3);
   font-style: italic;
 }
+/* gallery sections stack two or three notes; keep them from reading as one block */
+.origin + .origin {
+  margin-top: 7px;
+}
 .card-body p {
   margin: 0;
   font: 400 14px/1.5 var(--sans);
