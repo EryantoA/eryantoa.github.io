@@ -594,26 +594,6 @@ section {
   letter-spacing: 0.06em;
   text-align: right;
 }
-.shot {
-  aspect-ratio: 4/3;
-  border-bottom: 1px solid var(--line);
-  display: flex;
-  gap: 8px;
-  padding: 14px;
-  background: rgba(255, 255, 255, 0.02);
-}
-.shot span {
-  flex: 1;
-  border: 1px dashed rgba(240, 245, 255, 0.2);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font: 500 9px var(--mono);
-  color: rgba(240, 245, 255, 0.45);
-  text-align: center;
-}
-/* real screenshot on a card — the placeholder .shot is never shipped */
 .cover {
   display: block;
   width: 100%;
@@ -621,6 +601,33 @@ section {
   object-fit: cover;
   border-bottom: 1px solid var(--line);
   background: var(--bg-soft);
+}
+/* Three projects lost their source code, so they will never have a gallery.
+   Their cover slot carries the stack as type — clearly words, never a mock
+   screenshot. The type repeats .tech below, so screen readers skip it. */
+.cover-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  aspect-ratio: 4/3;
+  padding: 18px clamp(16px, 4vw, 26px);
+  border-bottom: 1px solid var(--line);
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      rgba(240, 245, 255, 0.035) 0 1px,
+      transparent 1px 10px
+    ),
+    var(--bg-soft);
+}
+.cover-type span {
+  font: 600 clamp(15px, 2.4vw, 20px) var(--mono);
+  letter-spacing: -0.02em;
+  color: rgba(240, 245, 255, 0.32);
+}
+.cover-type span:first-child {
+  color: rgba(242, 194, 48, 0.6);
 }
 .card-body {
   padding: 18px;

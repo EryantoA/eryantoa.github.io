@@ -54,7 +54,7 @@ Halaman cerita satu Project; hanya ada untuk Project berstatus Dipakai di lapang
 _Hindari_: case study (di copy ID), detail page
 
 **Galeri project**:
-Halaman kumpulan tangkapan layar dan daftar teknologi untuk Project mandiri; tidak menceritakan pemakai karena Project mandiri belum punya pemakai.
+Halaman kumpulan tangkapan layar dan daftar teknologi untuk Project mandiri; tidak menceritakan pemakai karena Project mandiri belum punya pemakai. Sifatnya opsional — ada Project mandiri yang tidak akan pernah punya galeri, dan ketiadaannya bukan sebuah klaim.
 _Hindari_: studi kasus (untuk menyebut galeri), showcase
 
 **Unggulan**:
