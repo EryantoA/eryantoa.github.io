@@ -14,12 +14,12 @@ copy must use (project status, "Ketersediaan", …) are defined in
 | File | Purpose |
 |---|---|
 | `index.html` | Home — outcome-first hero, marquees, projects in use, about, contact CTA |
-| `projects.html` | All 12 projects: status badges, business-type filters kept in the URL hash |
+| `projects.html` | All 19 projects: status badges, business-type filters kept in the URL hash |
 | `project-fh-superapp.html` · `project-litera.html` · `project-openclaw.html` | Case studies — only for projects with real users |
 | `contact.html` | WhatsApp first, then email / LinkedIn / GitHub, plus what to prepare |
 | `privacy.html` / `terms.html` | Legal, with sticky contents rail |
 | `gallery.html` | Project gallery — screenshots and stacks for independent projects, no usage claims (ADR 0002) |
-| `img/projects/` | Screenshots: max 900px wide, JPEG q70, never upscaled. Most were carried over from the 2023 portfolio; `p-qr-order/` was captured by running the app locally against sample data (see **Catatan data** in `CONTEXT.md`) |
+| `img/projects/` | Screenshots: max 900px wide, JPEG q70, never upscaled. The older ones were carried over from the 2023 portfolio; screenshots for the newer projects were captured by running the app locally against sample data (see **Catatan data** in `CONTEXT.md`) |
 | `en/*.html` | English mirror of every page above |
 | `404.html` | Custom not-found page, both languages in one file (must keep this exact filename) |
 | `styles.css` | All styling, one file, including the `@font-face` rules |
@@ -46,7 +46,9 @@ Every project card carries exactly one status (see `CONTEXT.md`):
 - **Dipakai sendiri / Personal use** — used by me or my family. May get a case
   study; never featured on Home.
 - **Project mandiri / Independent project** — built on my own initiative, no
-  real users yet. No case study, no screenshot area, no link.
+  real users yet. No case study. May have a **project gallery** instead —
+  screenshots and stack only, no usage claims (ADR 0002); a gallery is optional
+  and its absence claims nothing (ADR 0003).
 
 Where a project's code started from course material, the card says so
 (`.origin`). Don't write claims the status doesn't support ("shipped", "in

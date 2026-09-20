@@ -151,7 +151,7 @@
   /* ---- 3. Project filters — accessible, kept in the URL hash ---------- */
   // #kasir filters to that business type, so a filtered list can be shared
   // over WhatsApp and Back restores the previous filter. Any other hash
-  // (a card anchor such as #p-jago-pos) shows everything and lets the browser
+  // (a card anchor such as #p-kasir-offline) shows everything and lets the browser
   // scroll to it.
   var chips = document.querySelectorAll("[data-filter]");
   var items = document.querySelectorAll("[data-cat]");

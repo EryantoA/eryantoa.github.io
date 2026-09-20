@@ -1,6 +1,6 @@
 # Kartu tanpa bukti visual tetap tayang, dan itu disengaja
 
-Tiga Project mandiri — **Kasir AI**, **Laundry Multi-Outlet**, dan **Glowup Clinic** — kehilangan kode sumbernya secara permanen. Foldernya di `~/Developments` hanya tersisa struktur direktori: nol berkas Dart, `routes/` dan `migrations/` Laravel kosong, dan tidak ada arsip lain di mesin ini. Karena tidak ada yang bisa dijalankan, ketiganya tidak akan pernah punya **Galeri project**. (Bandingkan Jago POS, yang kehilangan satu berkas `pubspec.yaml` saja sehingga bisa dipulihkan dari `pubspec.lock` dan akhirnya punya galeri.)
+Tiga Project mandiri — **Kasir AI**, **Laundry Multi-Outlet**, dan **Glowup Clinic** — kehilangan kode sumbernya secara permanen. Foldernya di `~/Developments` hanya tersisa struktur direktori: nol berkas Dart, `routes/` dan `migrations/` Laravel kosong, dan tidak ada arsip lain di mesin ini. Karena tidak ada yang bisa dijalankan, ketiganya tidak akan pernah punya **Galeri project**. (Bandingkan Kasir Offline, yang kehilangan satu berkas `pubspec.yaml` saja sehingga bisa dipulihkan dari `pubspec.lock` dan akhirnya punya galeri.)
 
 Pertanyaannya bukan "bagaimana membuat gambarnya", melainkan "apa yang harus dilakukan pada kartu yang selamanya tidak bergambar". Kami memilih **menahannya tetap tayang** dengan perlakuan visual yang disengaja, dan **tanpa kalimat penjelasan** pada kartunya.
 

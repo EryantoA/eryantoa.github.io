@@ -22,6 +22,10 @@ _Hindari_: template, auto-message
 Satu karya yang ditampilkan sebagai satu kartu; boleh terdiri dari beberapa aplikasi.
 _Hindari_: app, system, sistem (sebagai satuan hitung)
 
+**Nama tampil**:
+Nama sebuah Project di kartu, galeri, dan daftar footer; diambil dari tema besar project itu, bukan dari merek penyedia kelas atau nama template asalnya. Asal kode disampaikan lewat Catatan asal-usul, bukan lewat nama.
+_Hindari_: Jago POS, Shamo, Flutix (nama merek kelas sebagai nama tampil)
+
 **Status Project**:
 Sifat tunggal setiap Project, ditentukan oleh siapa yang memakainya sekarang, bukan oleh ada tidaknya pembayaran.
 _Hindari_: shipped, in production, client work
