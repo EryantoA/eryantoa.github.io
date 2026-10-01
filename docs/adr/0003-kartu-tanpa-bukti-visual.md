@@ -1,5 +1,7 @@
 # Kartu tanpa bukti visual tetap tayang, dan itu disengaja
 
+> **Diperbarui 2 Oktober 2026:** Laundry Multi-Outlet kini punya Galeri (lihat pembaruan di bawah). Yang masih memakai perlakuan `.cover-type` hanya Helpdesk WA FH UIR. Keputusan umum di bawah tetap berlaku untuk kartu mana pun yang suatu hari tidak punya bukti visual.
+
 Project mandiri **Laundry Multi-Outlet** tidak bisa dijalankan, jadi tidak akan punya **Galeri project**. Foldernya di `~/Developments` hanya tersisa struktur direktori (nol berkas Dart), dan salinannya di GitHub (`flutter_laundry_offline_app-multioutlet`, privat) memang lengkap kodenya, tetapi bergantung pada Supabase: login lewat Supabase Auth, sedangkan repo hanya memuat migrasi `002` tanpa `001`, sehingga skema basis datanya tidak bisa dibangun ulang. Tanpa itu tidak ada tangkapan layar yang jujur.
 
 Pertanyaannya bukan "bagaimana membuat gambarnya", melainkan "apa yang harus dilakukan pada kartu yang tidak punya gambar". Kami memilih **menahannya tetap tayang** dengan perlakuan visual yang disengaja, dan **tanpa kalimat penjelasan** pada kartunya.
@@ -7,6 +9,10 @@ Pertanyaannya bukan "bagaimana membuat gambarnya", melainkan "apa yang harus dil
 ## Pembaruan 1 Oktober 2026
 
 Versi pertama ADR ini (Agustus–September 2026) menyebut **tiga** Project — Kasir AI, Laundry Multi-Outlet, dan Glowup Clinic — kehilangan kode sumbernya secara permanen dan "tidak ada arsip lain". Itu keliru: yang diperiksa hanya mesin ini. Kelima sub-repo ketiganya ternyata utuh di GitHub privat. Kasir AI dan Glowup Clinic lalu dijalankan dari salinan di folder sementara dan kini punya Galeri. Satu hal lagi ikut ketahuan: kode Kasir AI tidak memuat n8n maupun fitur AI apa pun (kata itu hanya berasal dari nama folder kursusnya), sehingga Project itu diganti namanya menjadi **Kasir Multi-Outlet** dan klaim n8n/AI dihapus. Pelajaran: "kode hilang" harus diperiksa sampai ke remote Git, bukan hanya ke disk.
+
+## Pembaruan 2 Oktober 2026
+
+Laundry Multi-Outlet akhirnya dijalankan dan punya Galeri. Alasan "tidak bisa dijalankan" di atas ternyata keliru: aplikasinya **offline-first dengan SQLite**, dan layar login punya jalur offline (akun owner bawaan yang dibuat saat basis data lokal diinisialisasi). Supabase hanya dipakai untuk login online dan sinkronisasi opsional, jadi tidak perlu backend sama sekali untuk memotret aplikasinya. Repo juga memuat `supabase/schema.sql`; yang tidak lengkap hanya folder `migrations`. Tangkapan layar diambil dari build debug di emulator dengan data fiktif (laundry, pelanggan, order, pengeluaran), logo dan nama bawaan kursus diganti, dan layar login/splash tidak dipublikasikan. Sinkronisasi Supabase tidak dijalankan dan galeri menyebut itu. Kata "stok" dihapus dari kartu karena aplikasinya tidak punya layar stok.
 
 ## Considered Options
 
