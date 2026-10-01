@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Litera — Eryanto Agusriadi</title>
+    <title>Helpdesk WA FH UIR — Eryanto Agusriadi</title>
     <meta
       name="description"
-      content="Pencari jurnal dari lima sumber akademik, dengan pustaka, ekspor sitasi, dan terjemahan PDF yang tidak merusak tata letak. Laravel 12 + React."
+      content="Bot WhatsApp yang menjawab pertanyaan administrasi mahasiswa FH UIR dan menyerahkan yang butuh petugas sebagai tiket."
     />
-    <meta property="og:title" content="Litera — studi kasus" />
+    <meta property="og:title" content="Helpdesk WA FH UIR — studi kasus" />
     <meta property="og:image" content="og.png" />
     <meta property="og:locale" content="id_ID" />
     <meta property="og:locale:alternate" content="en_US" />
-    <link rel="alternate" hreflang="id" href="project-litera.html" />
-    <link rel="alternate" hreflang="en" href="en/project-litera.html" />
-    <link rel="alternate" hreflang="x-default" href="project-litera.html" />
+    <link rel="alternate" hreflang="id" href="project-helpdesk-wa.html" />
+    <link rel="alternate" hreflang="en" href="en/project-helpdesk-wa.html" />
+    <link rel="alternate" hreflang="x-default" href="project-helpdesk-wa.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link
       rel="preload"
@@ -38,17 +38,17 @@
       <div class="hdr-right">
         <div class="lang" role="group" aria-label="Bahasa">
           <a
-            href="project-litera.html"
+            href="project-helpdesk-wa.html"
             hreflang="id"
             lang="id"
             aria-current="true"
             >ID</a
           >
-          <a href="en/project-litera.html" hreflang="en" lang="en">EN</a>
+          <a href="en/project-helpdesk-wa.html" hreflang="en" lang="en">EN</a>
         </div>
         <a
           class="btn btn-primary hdr-wa"
-          href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20Litera%20di%20portfolio%20Anda.%20Saya%20punya%20kebutuhan%20serupa."
+          href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20Helpdesk%20WA%20FH%20UIR.%20Saya%20tertarik%20bot%20WhatsApp%20untuk%20usaha%20saya."
           rel="noopener"
           >Chat WA</a
         >
@@ -70,26 +70,25 @@
       <section class="hero">
         <p class="greet"><a href="projects.html">← Semua project</a></p>
         <h1 class="poster">
-          <span class="p1">LITERA</span
-          ><span class="p2">cari &amp; terjemah.</span>
+          <span class="p1">HELPDESK</span><span class="p2">di WhatsApp</span>
         </h1>
         <div class="glow" aria-hidden="true"></div>
         <p class="greet" style="margin: 18px 0 0">
-          Riset · Web app · Dipakai untuk disertasi doktoral
+          Bot layanan mahasiswa · WhatsApp
         </p>
         <p style="margin: 14px 0 0">
           <span class="badge badge-field">DIPAKAI DI LAPANGAN</span>
         </p>
         <p class="lede" style="margin-top: 16px">
-          Mencari jurnal di lima sumber akademik sekaligus, menyimpannya ke
-          pustaka, lalu menerjemahkan PDF-nya tanpa merusak rumus dan tabel.
+          Mahasiswa bertanya seperti ke petugas. Bot menjawab yang sudah punya
+          aturan, dan menyerahkan sisanya ke petugas IT sebagai tiket.
         </p>
         <div class="cta-row">
           <a
             class="btn btn-primary"
-            href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20Litera%20di%20portfolio%20Anda.%20Saya%20punya%20kebutuhan%20serupa."
+            href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20Helpdesk%20WA%20FH%20UIR.%20Saya%20tertarik%20bot%20WhatsApp%20untuk%20usaha%20saya."
             rel="noopener"
-            >Punya kebutuhan serupa? Chat WA →</a
+            >Mau bot WhatsApp untuk layanan pelanggan Anda? Chat →</a
           >
         </div>
       </section>
@@ -97,55 +96,67 @@
       <dl class="meta">
         <div>
           <dt>JENIS</dt>
-          <dd>Web app + REST API</dd>
+          <dd>Bot layanan</dd>
         </div>
         <div>
           <dt>PEMAKAI</dt>
-          <dd>Peneliti disertasi (S3)</dd>
+          <dd>Mahasiswa FH UIR</dd>
         </div>
         <div>
-          <dt>STACK</dt>
-          <dd>Laravel 12 + React</dd>
+          <dt>RUNTIME</dt>
+          <dd>OpenClaw</dd>
         </div>
         <div>
-          <dt>TERJEMAHAN</dt>
-          <dd>LibreTranslate / LLM</dd>
+          <dt>DATA</dt>
+          <dd>Tiket CSV</dd>
         </div>
       </dl>
 
       <div class="split">
         <div>
-          <h2 class="eyebrow">Masalahnya</h2>
+          <h2 class="eyebrow">Idenya</h2>
           <p style="color: var(--ink-2); max-width: 62ch">
-            Riset disertasi berarti membuka lima situs pencarian jurnal satu per
-            satu, menyalin sitasi secara manual, dan menerjemahkan PDF berbahasa
-            asing yang tata letaknya hancur begitu teksnya disalin.
+            Pertanyaan yang masuk ke IT Support fakultas banyak yang sama:
+            pindah kelas, PIN wisuda, pembayaran, akun portal. Jawabannya sudah
+            ada aturannya, jadi ditulis sekali sebagai FAQ dan dijawab oleh bot
+            lewat WhatsApp, tempat mahasiswa memang bertanya.
           </p>
-          <h2 class="eyebrow" style="margin-top: 28px">Cara kerjanya</h2>
+          <h2 class="eyebrow" style="margin-top: 28px">Batas yang dijaga</h2>
           <p style="color: var(--ink-2); max-width: 62ch">
-            Satu kueri dijalankan paralel ke OpenAlex, Semantic Scholar,
-            CrossRef, DOAJ, dan Garuda, lalu hasilnya digabung dan duplikatnya
-            dibuang berdasarkan DOI dan judul. Terjemahan berjalan di antrean:
-            mode cepat gratis lewat LibreTranslate, mode akurat lewat LLM dengan
-            kuota bulanan per pengguna.
+            Bot hanya menjawab dari FAQ yang ditulis petugas, memperkenalkan
+            diri sebagai Admin, dan tidak pernah mengaku petugas manusia. Hal
+            yang butuh keputusan petugas, seperti pendaftaran SKS skripsi,
+            selalu menjadi tiket yang dibalas orang.
+          </p>
+          <h2 class="eyebrow" style="margin-top: 28px">Sudah dipakai</h2>
+          <p style="color: var(--ink-2); max-width: 62ch">
+            Dibuka penuh ke mahasiswa pada 26 Agustus 2026, setelah daftar
+            periksa go-live tuntas. Pada pekan pertama, belasan mahasiswa
+            memakainya dan sebagian besar tiket selesai ditangani.
+          </p>
+          <h2 class="eyebrow" style="margin-top: 28px">Yang masih terbuka</h2>
+          <p style="color: var(--ink-2); max-width: 62ch">
+            Satu risiko dicatat apa adanya: balasan manual petugas di chat yang
+            masih berstatus tiket bisa ikut memicu bot. Aturannya, petugas
+            menunggu tiket selesai dulu sebelum mengetik ke chat itu.
           </p>
         </div>
         <div>
           <h2 class="eyebrow">Dibangun dengan</h2>
           <ul class="tags">
-            <li>Laravel 12</li>
-            <li>React (Vite)</li>
-            <li>MySQL</li>
-            <li>Sanctum</li>
-            <li>LibreTranslate</li>
-            <li>pdf2zh</li>
+            <li>OpenClaw</li>
+            <li>Groq</li>
+            <li>Llama 3.3 70B</li>
+            <li>Docker</li>
+            <li>WhatsApp</li>
+            <li>CSV</li>
           </ul>
           <h2 class="eyebrow">Dalam angka</h2>
           <div class="numbers">
-            <div><b>5</b><span>SUMBER JURNAL</span></div>
-            <div><b>2</b><span>FORMAT SITASI</span></div>
-            <div><b>2</b><span>MODE TERJEMAHAN</span></div>
-            <div><b>2</b><span>BERKAS PER PDF</span></div>
+            <div><b>±15</b><span>MAHASISWA, PEKAN PERTAMA</span></div>
+            <div><b>14</b><span>KATEGORI PERTANYAAN</span></div>
+            <div><b>12</b><span>KEPUTUSAN TERCATAT</span></div>
+            <div><b>0</b><span>APLIKASI UNTUK DIINSTAL</span></div>
           </div>
         </div>
       </div>
@@ -153,56 +164,20 @@
       <section>
         <h2 class="eyebrow">Fitur utama</h2>
         <ul class="features">
-          <li>
-            Pencarian gabungan dengan filter tahun, open access, bahasa, dan
-            sumber
-          </li>
-          <li>Pustaka per pengguna: simpan paper, folder, tag, dan catatan</li>
-          <li>Ekspor sitasi BibTeX dan RIS untuk Mendeley, Zotero, dan Word</li>
-          <li>Riwayat pencarian per pengguna</li>
-          <li>Terjemahan dari teks, abstrak, atau unggahan PDF</li>
-          <li>PDF dwibahasa yang mempertahankan rumus, tabel, dan gambar</li>
-          <li>Multi-pengguna dengan login token</li>
+          <li>Menu bernomor sebagai pintu masuk, dengan jalur bebas bila pertanyaannya sudah jelas</li>
+          <li>Menjawab dari 14 kategori FAQ yang ditulis dan diperiksa petugas</li>
+          <li>Menyerahkan ke petugas IT sebagai tiket bila butuh manusia</li>
+          <li>Tiket ditutup petugas lewat skrip, bukan lewat chat</li>
+          <li>Berjalan sebagai agen terpisah dari asisten pribadi pemiliknya, di dalam sandbox Docker</li>
+          <li>Memakai model lewat API key, bukan langganan pribadi</li>
         </ul>
       </section>
 
-      <section>
-        <h2 class="eyebrow">Tangkapan layar</h2>
-        <p style="color: var(--ink-2); max-width: 62ch; margin-bottom: 20px">
-          Diambil dari instance kosong yang dijalankan khusus untuk ini — bukan dari pemakaian sesungguhnya. Layar pencarian bisa ditampilkan karena isinya metadata paper yang memang terbit umum. Pustaka dan riwayat tetap tidak ditampilkan: keduanya memuat koleksi dan jejak riset milik penggunanya.
-        </p>
-        <div class="gallery gallery-wide">
-            <img
-              src="img/projects/p-litera/01.jpg"
-              width="900"
-              height="562"
-              loading="lazy"
-              alt="Halaman masuk Litera pada instance kosong"
-            />
-            <img
-              src="img/projects/p-litera/02.jpg"
-              width="900"
-              height="562"
-              loading="lazy"
-              alt="Halaman daftar akun: nama, email, dan kata sandi minimal 8 karakter"
-            />
-            <img
-              src="img/projects/p-litera/03.jpg"
-              width="900"
-              height="487"
-              loading="lazy"
-              alt="Hasil pencarian &quot;point of sale&quot;: 74 hasil dari 3 dari 6 sumber, dengan peringatan bahwa Semantic Scholar dan arXiv tidak merespons sehingga hasil belum lengkap"
-            />
-        </div>
-      </section>
-
       <nav class="pager" aria-label="Navigasi studi kasus">
-        <a href="project-fh-superapp.html"
-          ><small>← SEBELUMNYA</small><b>FH Superapp</b></a
-        >
         <a href="project-openclaw.html"
-          ><small>BERIKUTNYA →</small><b>OpenClaw</b></a
+          ><small>← SEBELUMNYA</small><b>OpenClaw</b></a
         >
+        <a href="projects.html"><small>KEMBALI →</small><b>Semua project</b></a>
       </nav>
     </main>
 
@@ -221,7 +196,7 @@
               >eryantoagusriadi793@gmail.com</a
             ><br />
             <a
-              href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20Litera%20di%20portfolio%20Anda.%20Saya%20punya%20kebutuhan%20serupa."
+              href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20Helpdesk%20WA%20FH%20UIR.%20Saya%20tertarik%20bot%20WhatsApp%20untuk%20usaha%20saya."
               rel="noopener"
               >+62 822-8778-0309</a
             ><br />
@@ -267,7 +242,7 @@
             </li>
             <li>
               <a
-                href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20Litera%20di%20portfolio%20Anda.%20Saya%20punya%20kebutuhan%20serupa."
+                href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20Helpdesk%20WA%20FH%20UIR.%20Saya%20tertarik%20bot%20WhatsApp%20untuk%20usaha%20saya."
                 rel="noopener"
                 >WhatsApp ↗</a
               >
@@ -299,7 +274,7 @@
           />
           <a
             class="btn btn-primary"
-            href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20Litera%20di%20portfolio%20Anda.%20Saya%20punya%20kebutuhan%20serupa."
+            href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20Helpdesk%20WA%20FH%20UIR.%20Saya%20tertarik%20bot%20WhatsApp%20untuk%20usaha%20saya."
             rel="noopener"
             style="padding: 11px 16px"
             >Chat WA</a
@@ -315,11 +290,13 @@
           <p>STUDI KASUS</p>
           <ul>
             <li><a href="project-fh-superapp.html">FH Superapp</a></li>
+            <li><a href="project-litera.html">Litera</a></li>
             <li>
-              <a href="project-litera.html" aria-current="page">Litera</a>
+              <a href="project-openclaw.html">OpenClaw</a>
             </li>
-            <li><a href="project-openclaw.html">OpenClaw</a></li>
-            <li><a href="project-helpdesk-wa.html">Helpdesk WA</a></li>
+            <li>
+              <a href="project-helpdesk-wa.html" aria-current="page">Helpdesk WA</a>
+            </li>
           </ul>
           <p>PROJECT MANDIRI</p>
           <ul>
@@ -355,7 +332,7 @@
             </li>
             <li>
               <a
-                href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20Litera%20di%20portfolio%20Anda.%20Saya%20punya%20kebutuhan%20serupa."
+                href="https://wa.me/6282287780309?text=Halo%20Eryanto%2C%20saya%20lihat%20studi%20kasus%20Helpdesk%20WA%20FH%20UIR.%20Saya%20tertarik%20bot%20WhatsApp%20untuk%20usaha%20saya."
                 rel="noopener"
                 >WhatsApp ↗</a
               >

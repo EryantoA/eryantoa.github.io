@@ -46,7 +46,7 @@ Keterangan bahwa kode sebuah Project berangkat dari materi kelas atau karya oran
 _Hindari_: credit, based on
 
 **Catatan data**:
-Keterangan bahwa isi layar pada Galeri project adalah data buatan untuk keperluan tangkapan layar, bukan jejak pemakaian nyata; berdiri terpisah dari Catatan asal-usul yang berbicara soal asal kode.
+Keterangan bahwa isi gambar pada Galeri project atau pada sampul kartu (tangkapan layar, foto, nama) adalah data buatan untuk keperluan gambar itu, bukan jejak pemakaian nyata; berdiri terpisah dari Catatan asal-usul yang berbicara soal asal kode.
 _Hindari_: dummy, mock, data palsu
 
 **Jenis usaha**:
