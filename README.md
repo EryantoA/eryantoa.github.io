@@ -14,7 +14,7 @@ copy must use (project status, "Ketersediaan", …) are defined in
 | File | Purpose |
 |---|---|
 | `index.html` | Home — outcome-first hero, marquees, projects in use, about, contact CTA |
-| `projects.html` | All 25 projects: status badges, business-type filters kept in the URL hash |
+| `projects.html` | All 24 projects: status badges, business-type filters kept in the URL hash |
 | `project-fh-superapp.html` · `project-litera.html` · `project-openclaw.html` | Case studies — only for projects with real users |
 | `contact.html` | WhatsApp first, then email / LinkedIn / GitHub, plus what to prepare |
 | `privacy.html` / `terms.html` | Legal, with sticky contents rail |
