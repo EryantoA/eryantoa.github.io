@@ -1394,9 +1394,33 @@ input:focus {
     padding: 56px 12px 16px;
     gap: 6px;
   }
+  /* on a phone the arrows would sit on top of the picture; park them
+     beside the caption instead */
   .preview .pv-nav {
-    width: 36px;
-    height: 36px;
-    font-size: 20px;
+    position: absolute;
+    bottom: 16px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    background: rgba(5, 10, 20, 0.85);
+  }
+  .preview .pv-prev {
+    left: 12px;
+  }
+  .preview .pv-next {
+    right: 12px;
+  }
+  .preview {
+    padding: 56px 12px 16px;
+  }
+  .preview img {
+    max-height: calc(100% - 96px);
+  }
+  .preview figcaption {
+    padding: 0 52px;
+    min-height: 60px;
+  }
+  .preview.single figcaption {
+    padding: 0;
   }
 }
