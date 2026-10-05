@@ -1313,3 +1313,90 @@ input:focus {
 .ftr-bar a {
   color: var(--accent);
 }
+
+/* image preview (see CONTEXT.md: Pratinjau gambar) */
+.pv-lock {
+  overflow: hidden;
+}
+.preview {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 56px 64px 24px;
+  border: 0;
+  background: rgba(5, 10, 20, 0.94);
+  color: var(--ink);
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.preview[open] {
+  display: flex;
+}
+.preview figure {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.preview img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100% - 48px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+.preview figcaption {
+  font: 12px/1.5 var(--mono);
+  color: var(--ink-2);
+  text-align: center;
+  max-width: 70ch;
+}
+.preview button {
+  appearance: none;
+  border: 1px solid var(--line-2);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--ink);
+  border-radius: 999px;
+  width: var(--tap);
+  height: var(--tap);
+  font: 24px/1 var(--sans);
+  cursor: pointer;
+  flex: none;
+}
+.preview button:hover,
+.preview button:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.preview .pv-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 18px;
+}
+.preview.single .pv-nav {
+  display: none;
+}
+@media (max-width: 640px) {
+  .preview {
+    padding: 56px 12px 16px;
+    gap: 6px;
+  }
+  .preview .pv-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+}

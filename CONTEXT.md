@@ -61,6 +61,10 @@ _Hindari_: case study (di copy ID), detail page
 Halaman kumpulan tangkapan layar dan daftar teknologi untuk Project mandiri; tidak menceritakan pemakai karena Project mandiri belum punya pemakai. Sifatnya opsional — ada Project mandiri yang tidak akan pernah punya galeri, dan ketiadaannya bukan sebuah klaim.
 _Hindari_: studi kasus (untuk menyebut galeri), showcase
 
+**Pratinjau gambar** (*Image preview*):
+Tampilan layar penuh untuk melihat satu gambar pada Galeri project (atau galeri di halaman Studi kasus), dengan navigasi antar gambar dalam galeri yang sama. Tidak punya alamat URL sendiri.
+_Hindari_: lightbox, modal, zoom
+
 **Unggulan**:
 Project yang ditampilkan di Home; hanya Project berstatus Dipakai di lapangan.
 _Hindari_: featured (di copy ID), highlight

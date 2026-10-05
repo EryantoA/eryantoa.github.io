@@ -208,5 +208,104 @@
     apply(fromHash());
   }
 
+  /* ---- Image preview for .gallery images ------------------------------ */
+  (function () {
+    var groups = document.querySelectorAll(".gallery");
+    if (!groups.length || !window.HTMLDialogElement) return;
+
+    var en = document.documentElement.lang === "en";
+    var t = en
+      ? { close: "Close", prev: "Previous", next: "Next" }
+      : { close: "Tutup", prev: "Sebelumnya", next: "Berikutnya" };
+
+    var box = document.createElement("dialog");
+    box.className = "preview";
+    box.setAttribute("aria-label", en ? "Image preview" : "Pratinjau gambar");
+    box.innerHTML =
+      '<button type="button" class="pv-close" aria-label="' + t.close + '">✕</button>' +
+      '<button type="button" class="pv-nav pv-prev" aria-label="' + t.prev + '">‹</button>' +
+      '<figure><img alt="" /><figcaption></figcaption></figure>' +
+      '<button type="button" class="pv-nav pv-next" aria-label="' + t.next + '">›</button>';
+    document.body.appendChild(box);
+
+    var img = box.querySelector("img");
+    var cap = box.querySelector("figcaption");
+    var items = [];
+    var at = 0;
+    var opener = null;
+
+    function show(i) {
+      at = (i + items.length) % items.length;
+      var src = items[at];
+      img.src = src.currentSrc || src.src;
+      img.alt = src.alt;
+      // never upscale past the file's own resolution
+      // (lazy thumbnails may not be decoded yet, so fall back to the width attribute)
+      var w = src.naturalWidth || +src.getAttribute("width") || 0;
+      img.style.maxWidth = w ? w + "px" : "";
+      cap.textContent = (at + 1) + " / " + items.length + " — " + src.alt;
+    }
+    function open(group, i) {
+      items = Array.prototype.slice.call(group.querySelectorAll("img"));
+      opener = items[i];
+      box.classList.toggle("single", items.length < 2);
+      show(i);
+      box.showModal();
+      document.documentElement.classList.add("pv-lock");
+    }
+    function close() {
+      box.close();
+    }
+
+    each(groups, function (group) {
+      each(group.querySelectorAll("img"), function (el, i) {
+        el.tabIndex = 0;
+        el.setAttribute("role", "button");
+        el.style.cursor = "zoom-in";
+        el.addEventListener("click", function () {
+          open(group, i);
+        });
+        el.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            open(group, i);
+          }
+        });
+      });
+    });
+
+    box.querySelector(".pv-close").addEventListener("click", close);
+    box.querySelector(".pv-prev").addEventListener("click", function () {
+      show(at - 1);
+    });
+    box.querySelector(".pv-next").addEventListener("click", function () {
+      show(at + 1);
+    });
+    // a click on the dark backdrop lands on the dialog itself
+    box.addEventListener("click", function (e) {
+      if (e.target === box || e.target.tagName === "FIGURE") close();
+    });
+    box.addEventListener("keydown", function (e) {
+      if (items.length < 2) return;
+      if (e.key === "ArrowLeft") show(at - 1);
+      else if (e.key === "ArrowRight") show(at + 1);
+    });
+    box.addEventListener("close", function () {
+      document.documentElement.classList.remove("pv-lock");
+      if (opener) opener.focus();
+    });
+
+    var x0 = null;
+    box.addEventListener("touchstart", function (e) {
+      x0 = e.touches[0].clientX;
+    }, { passive: true });
+    box.addEventListener("touchend", function (e) {
+      if (x0 === null || items.length < 2) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      x0 = null;
+      if (Math.abs(dx) > 50) show(at + (dx < 0 ? 1 : -1));
+    });
+  })();
+
   /* 404.html resolves its own base in an inline script — nothing to do here. */
 })();
